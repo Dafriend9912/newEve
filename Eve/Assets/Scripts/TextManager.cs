@@ -15,6 +15,7 @@ public class TextManager : MonoBehaviour
     public bool active;
     public TextAsset blank;
     public string story;
+    public bool CR = false;
 
     // Start is called before the first frame update
     void Start()
@@ -84,7 +85,11 @@ public class TextManager : MonoBehaviour
         print("testing");
         if (active)
         {
-            
+            if (CR)
+            {
+                Skip();
+                return;
+            }
             if(currline < endline)
             {
             
@@ -101,12 +106,25 @@ public class TextManager : MonoBehaviour
            
         }
     }
+
+    public void Skip()
+    {
+        if (active)
+        {
+            CR = false;
+            StopCoroutine("PlayText");
+            theText.text = "";
+            theText.text = story;
+        }
+    }
     IEnumerator PlayText()
     {
+        CR = true;
         foreach (char c in story) 
         {
             theText.text += c;
-            yield return new WaitForSeconds (0.125f);
+            yield return new WaitForSeconds (0.050f);
         }
+        CR = false;
     }
 }
