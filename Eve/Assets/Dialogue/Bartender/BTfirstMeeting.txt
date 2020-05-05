@@ -35,9 +35,3 @@ I'm sorry I don't know much more than that, but you should ask around.
 The owner knows the most of what's going on around here.
 [Main Dancer] is who you'll want to talk to if you want to know more about people. She's the clubs most popular dancer and she knows it.
 Also if you've got a minute, you could talk to [Musician], he's the musician here and a good friend of mine.
-
-{Options}
-Go talk to the Owner
-Go talk to [Main Dancer]
-Go talk to [Musician]
-Stay and question the bartender further

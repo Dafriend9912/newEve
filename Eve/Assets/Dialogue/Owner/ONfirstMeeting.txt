@@ -43,10 +43,3 @@ Actually, I wanted to ask you some questions.
 
 Owner:
 Ok ok ok, but make it quick.
-
-{Options}
-Ask about his job
-Ask about the Gala
-Ask about potential victims.
-Ask about potential murderers.
-Ask about his "work"

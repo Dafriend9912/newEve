@@ -1,0 +1,6 @@
+{Options}
+talk to [Dancer]
+talk to [Bartender]
+talk to [Musician]
+= talk to [Boxer] Requires BTPeople
+= Go talk to [Stage Director] Requires ONlazy || ONmurderer
