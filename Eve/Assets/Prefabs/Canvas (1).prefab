@@ -287,6 +287,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5571361171490328447, guid: 6baada54025515e488ac058cf5cab227,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571361171490328447, guid: 6baada54025515e488ac058cf5cab227,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571361171490328447, guid: 6baada54025515e488ac058cf5cab227,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571361171490328447, guid: 6baada54025515e488ac058cf5cab227,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571361171490328447, guid: 6baada54025515e488ac058cf5cab227,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571361171490328447, guid: 6baada54025515e488ac058cf5cab227,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7771181128953346607, guid: 6baada54025515e488ac058cf5cab227,
         type: 3}
       propertyPath: m_Name
@@ -436,6 +466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bar_Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658203371870285973, guid: 525b164aeb3483b49ab99f39af035fbd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8280191512377406985, guid: 525b164aeb3483b49ab99f39af035fbd,
         type: 3}
