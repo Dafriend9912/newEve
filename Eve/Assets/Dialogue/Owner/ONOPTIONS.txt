@@ -1,0 +1,7 @@
+{Options}
+Ask about his job
+Ask about the Gala
+Ask about potential victims.
+Ask about potential murderers.
+Ask about his "work" = requires asking about job and Gala first
+Talk to someone else
