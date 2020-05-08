@@ -16,6 +16,7 @@ public class TextManager : MonoBehaviour
     public TextAsset blank;
     public string story;
     public bool CR = false;
+    public TextMeshProUGUI nameText;
 
     // Start is called before the first frame update
     void Start()
@@ -92,7 +93,11 @@ public class TextManager : MonoBehaviour
             }
             if(currline < endline)
             {
-            
+                if(textlines[currline].ToCharArray()[0] == '@')
+                {
+                    nameText.text = textlines[currline].Substring(1);
+                    currline++;
+                }
                 theText.text = textlines[currline];
                 story = theText.text; 
                 theText.text = "";
