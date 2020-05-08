@@ -59,6 +59,12 @@ public class TextManager : MonoBehaviour
             nameText.text = textlines[currline].Substring(1);
             currline++;
         }
+        if (textlines[currline].ToCharArray()[0] == '#')
+        {
+            nameText.text = textlines[currline].Substring(1);
+            currline++;
+            DisableTextBox();
+        }
         textbox.SetActive(true);
         active = true;
         theText.text = textlines[currline];
