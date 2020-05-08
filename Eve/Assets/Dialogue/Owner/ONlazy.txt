@@ -1,28 +1,24 @@
-You:
+@You
 I've got it.
 The reason you're so busy is because you don't actually do any work.
-
-Owner:
+@Owner
 ...
-
-You:
+@You
 Your silence is all I need to confirm my suspicions.
 All that "big man" talk was just to cover up for your lack of work ethic.
 That must be the reason you're so perpetually busy, yet you haven't even started preparing for the Gala yet.
-
-Owner:
+@Owner
 Well...
-Maybe I was wrong about you.
+URGH...
+Maybe I was wrong about you OK?
 I am a bit on the lazy side. To be truthful, I wouldn't be able to manage this club by myself.
 I rely on the Stage Manager to help me out quite a bit.
 If my staff knew, they'd never respect me.
-
-You:
+@You
 The easiest fix to that would be to just do your work.
-
-Owner:
+@Owner
 I know I know. I just can't make myself do any of it.
 Please don't tell anyone.
-
-You:
+@You
 (Maybe I should go pay the Stage Director a visit...)
+ONOPTIONS3.txt

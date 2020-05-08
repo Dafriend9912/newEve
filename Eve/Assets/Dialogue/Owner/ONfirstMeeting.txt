@@ -1,45 +1,34 @@
-Owner:
+@Owner
 Excuse me, who are you?
-
-You:
-I'm detective [Name]
-
-Owner:
+@You
+I'm The Detective
+@Owner
 Detective??? I didn't hire a detective!!
 What are you doing here! I'm a very busy man the last thing I need is a detective getting in my way!
-
-You:
-(Did the bartender not mention I was going to be here...?)
+@You
+(Did The Bartender not mention I was going to be here...?)
 I'm here about the possible upcoming murder.
-
-Owner:
+@Owner
 URGH!!!
-You must've been talking to the bartender, haven't you??
-
-You:
+You must've been talking to The Bartender, haven't you??
+@You
 Well yes, he aske-
-
-Owner:
+@Owner
 He's lost it! Absolutely gone of the deep end!
 Murder? HAH!
 Who does he think he is going against my authority?
-
-You:
+@You
 (Sounds like this guy isn't having the best day...)
-
-Owner:
+@Owner
 I told him he must be wrong, no murder would ever happen at MY club!
 How dare he go behind my back and hire a detective!
 And during this time! I'm much too busy as is!!
-
-You:
+@You
 (Sheesh he might be having more than just a bad day...)
-
-Owner:
+@Owner
 I suppose it's no matter, just try to stay out of my way okay? I'm very busy.
-
-You:
+@You
 Actually, I wanted to ask you some questions.
-
-Owner:
+@Owner
 Ok ok ok, but make it quick.
+#ONOPTIONS1.txt

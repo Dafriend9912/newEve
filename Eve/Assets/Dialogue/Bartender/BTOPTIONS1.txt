@@ -1,7 +1,2 @@
-{Options}
-Go talk to the Owner
-Go talk to [Main Dancer]
-Go talk to [Musician]
-Stay and question the bartender further
-= Go talk to [Boxer] Requires BTPeople
-= Go talk to [Stage Director] Requires ONlazy || ONmurderer
+Go talk to someone else
+Stay and question The Bartender
