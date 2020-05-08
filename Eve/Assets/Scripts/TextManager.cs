@@ -16,7 +16,7 @@ public class TextManager : MonoBehaviour
     public TextAsset blank;
     public string story;
     public bool CR = false;
-    public Text nameText;
+    public static Text nameText;
 
     // Start is called before the first frame update
     void Start()
