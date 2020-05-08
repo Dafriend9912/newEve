@@ -6,13 +6,13 @@ The owner is an okay guy. I've been working here for years now and he's never do
 He pays well and manages the club, but I think there might be something bad between him and the stage director.
 The dancers are all alright.
 Full honesty, I don't care for them at all, all stuck up pricks if you ask me, but they're part of working in a club
-[The Musician] and I are good friends. He started here a little over a year ago. I don't think he's a big fan of this place, but it pays the bills.
+The Musician and I are good friends. He started here a little over a year ago. I don't think he's a big fan of this place, but it pays the bills.
 As for customers, we have a couple regulars here.
 There's a young man who comes in here a couple times a week.
 He's got a fiery temper, takes everything as an insult and always seems to be compensating for something.
 Always spends a large amount of money on two dancers in particular.
 He seems to think he's got an actual chance with them, sorry sap.
-Do you know [Boxer], he's a boxer at a nearby ring who sometimes comes around.
+Do you know The Boxer? he's a boxes at a nearby ring and sometimes comes around.
 He seems decent enough, rarely talks.
 There's also a fellow who comes by every now and then.
 He's a real big shot, makes a lot of money gambling at a nearby casino.
@@ -22,4 +22,4 @@ That being said, he's very smart with his money, and equally cunning.
 Thanks for the help.
 @Bartender
 Of course.
-#BTOPTIONS2.txt
+#BTOPTIONS3.txt

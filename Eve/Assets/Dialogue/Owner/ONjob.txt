@@ -1,15 +1,12 @@
-You:
+@You
 Can you tell me what you do around here?
-
-Owner:
+@Owner
 What I do? What I DO?
 Please, I run this whole operation.
 Nothing passes through the club without me knowing about it!
-
-You:
+@You
 (And yet he somehow didn't know about me...)
-
-Owner:
+@Owner
 I run the books around here!
 I make the money around here!
 I'm a very busy man!
@@ -19,13 +16,12 @@ Not just the club either!
 I have to deal with everyone who works here too.
 That's the real pain, a bunch of idiots!
 They always think that they can get away with not listening to me!
-Not the stage manager though, he's a good man.
+Not The Stage Director though, he's a good man.
 Got a real head on his shoulders!
-
-You:
-The stage ma-
-
-Owner:
-Yes of course the stage manager!
+@You
+The Stage Di-
+@Owner
+Yes of course The Stage Director!
 You should go talk to him!
 I'm much too busy to keep sharing about "my job"
+ONOPTIONS3.txt
