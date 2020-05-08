@@ -1,6 +1,6 @@
 {Options}
-What are your thoughts on the case?
-Why were you later getting home than usual?
-Tell me more about yourself.
-What's the Gala?
-Tell me about some of the people here.
+Go talk to the Owner
+Go talk to [Main Dancer]
+Go talk to [Musician]
+= Go talk to [Boxer] Requires BTPeople
+= Go talk to [Stage Director] Requires ONlazy || ONmurderer
