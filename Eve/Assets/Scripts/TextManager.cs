@@ -17,6 +17,7 @@ public class TextManager : MonoBehaviour
     public string story;
     public bool CR = false;
     public Text nameText;
+    public ChoiceManager Choices;
 
     // Start is called before the first frame update
     void Start()
@@ -104,6 +105,16 @@ public class TextManager : MonoBehaviour
             if(currline < endline)
             {
                 if(textlines[currline].ToCharArray()[0] == '@')
+                {
+                    nameText.text = textlines[currline].Substring(1);
+                    currline++;
+                }
+                if (textlines[currline].ToCharArray()[0] == '#')
+                {
+                    nameText.text = textlines[currline].Substring(1);
+                    currline++;
+                }
+                if (textlines[currline].ToCharArray()[0] == '$')
                 {
                     nameText.text = textlines[currline].Substring(1);
                     currline++;
