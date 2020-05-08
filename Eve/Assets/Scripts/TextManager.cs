@@ -54,7 +54,11 @@ public class TextManager : MonoBehaviour
     public void EnableTextBox()
     {
 
-        
+        if (textlines[currline].ToCharArray()[0] == '@')
+        {
+            nameText.text = textlines[currline].Substring(1);
+            currline++;
+        }
         textbox.SetActive(true);
         active = true;
         theText.text = textlines[currline];
