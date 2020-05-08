@@ -22,15 +22,6 @@ public class TextManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (text != null)
-        {
-            textlines = (text.text.Split('\n'));
-        }
-
-        if (endline == 0)
-        {
-            endline = textlines.Length;
-        }
         if (active)
         {
             EnableTextBox();
@@ -54,19 +45,26 @@ public class TextManager : MonoBehaviour
 
     public void EnableTextBox()
     {
+        if (text != null)
+        {
+            textlines = (text.text.Split('\n'));
+        }
 
+        if (endline == 0)
+        {
+            endline = textlines.Length;
+        }
         if (textlines[currline].ToCharArray()[0] == '@')
         {
             nameText.text = textlines[currline].Substring(1);
             currline++;
         }
-        if (textlines[currline].ToCharArray()[0] == '#')
+        else if (textlines[currline].ToCharArray()[0] == '#')
         {
-            nameText.text = textlines[currline].Substring(1);
-            currline++;
+            Choices.EnableDialoguePanel(textlines[currline].Substring(1));
             DisableTextBox();
         }
-        if (textlines[currline].ToCharArray()[0] == '$')
+        else if (textlines[currline].ToCharArray()[0] == '$')
         {
             Choices.EnableChoicePanel(textlines[currline].Substring(1));
             DisableTextBox();
@@ -84,6 +82,8 @@ public class TextManager : MonoBehaviour
     {
         textbox.SetActive(false);
         active = false;
+        currline = 0;
+        endline = 0;
         textlines = new string[]{"  ", "  "};
         theText.text = "";
     }
@@ -114,16 +114,15 @@ public class TextManager : MonoBehaviour
                     nameText.text = textlines[currline].Substring(1);
                     currline++;
                 }
-                if (textlines[currline].ToCharArray()[0] == '#')
+                else if (textlines[currline].ToCharArray()[0] == '#')
                 {
-                    nameText.text = textlines[currline].Substring(1);
-                    currline++;
-                }
-                if (textlines[currline].ToCharArray()[0] == '$')
-                {
-                    nameText.text = textlines[currline].Substring(1);
+                    Choices.EnableDialoguePanel(textlines[currline].Substring(1));
                     DisableTextBox();
+                }
+                else if (textlines[currline].ToCharArray()[0] == '$')
+                {
                     Choices.EnableChoicePanel(textlines[currline].Substring(1));
+                    DisableTextBox();
                 }
                 theText.text = textlines[currline];
                 story = theText.text; 
