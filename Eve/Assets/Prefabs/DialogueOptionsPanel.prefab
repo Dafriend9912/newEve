@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.4850006, y: -49.600006}
-  m_SizeDelta: {x: 0.9700012, y: 0}
+  m_AnchoredPosition: {x: -0.26742172, y: -69.5}
+  m_SizeDelta: {x: 186.77, y: -321}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7777046792086488101
 CanvasRenderer:
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 4.085388, y: 49.519165, z: 3.184845, w: 52.21814}
   m_textInfo:
     textComponent: {fileID: 3412285241686280928}
     characterCount: 22
@@ -140,7 +140,7 @@ MonoBehaviour:
     spaceCount: 4
     wordCount: 4
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -193,8 +193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.18000793, y: 50.8}
-  m_SizeDelta: {x: 0.97, y: 0}
+  m_AnchoredPosition: {x: -0.0001411438, y: 50.339996}
+  m_SizeDelta: {x: 188.42, y: -312.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3599267001197796879
 CanvasRenderer:
@@ -252,8 +252,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 3.4706116, y: 0, z: 4.0211487, w: 0.5957031}
   m_textInfo:
     textComponent: {fileID: 7485465566836724681}
     characterCount: 25
@@ -298,7 +298,7 @@ MonoBehaviour:
     spaceCount: 5
     wordCount: 5
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -583,7 +583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 145, y: 636}
+  m_AnchoredPosition: {x: 15.9, y: 633}
   m_SizeDelta: {x: 697.2, y: 697.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4449538497987859732
@@ -621,8 +621,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.4850006, y: -104.899994}
-  m_SizeDelta: {x: 0.9700012, y: 0}
+  m_AnchoredPosition: {x: -0.51012, y: -124.7}
+  m_SizeDelta: {x: 188.27, y: -320.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4974814960665440025
 CanvasRenderer:
@@ -680,8 +680,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -718,7 +718,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 4.7342224, y: -0.9581299, z: 3.9566956, w: -2.3798828}
   m_textInfo:
     textComponent: {fileID: 7274651249217864511}
     characterCount: 22
@@ -726,7 +726,7 @@ MonoBehaviour:
     spaceCount: 4
     wordCount: 4
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1146,8 +1146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000022947, y: 107}
-  m_SizeDelta: {x: -5.556, y: 0}
+  m_AnchoredPosition: {x: -0.2674408, y: 118.9}
+  m_SizeDelta: {x: 167.17, y: -307.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4945530038004423994
 CanvasRenderer:
@@ -1205,8 +1205,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1243,7 +1243,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.27542233, y: 0, z: 0.60573184, w: 0}
+  m_margin: {x: 2.2810597, y: 0, z: 3.7062745, w: -0.80908203}
   m_textInfo:
     textComponent: {fileID: 2296020528572643483}
     characterCount: 21
@@ -1251,7 +1251,7 @@ MonoBehaviour:
     spaceCount: 5
     wordCount: 5
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1421,8 +1421,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.4850006, y: 0}
-  m_SizeDelta: {x: 0.9700012, y: 0}
+  m_AnchoredPosition: {x: -0.2673912, y: -10.0099945}
+  m_SizeDelta: {x: 186.77, y: -313.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7602044018038332620
 CanvasRenderer:
@@ -1480,8 +1480,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1518,7 +1518,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 4.340973, y: 0, z: 3.0941467, w: 1.1247559}
   m_textInfo:
     textComponent: {fileID: 3868191040648967802}
     characterCount: 22
@@ -1526,7 +1526,7 @@ MonoBehaviour:
     spaceCount: 4
     wordCount: 4
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

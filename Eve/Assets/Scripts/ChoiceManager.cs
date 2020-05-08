@@ -22,6 +22,9 @@ public class ChoiceManager : MonoBehaviour
     public bool active;
     public TextAsset blank;
     public Text nameText;
+    public TextManager texting;
+    public string path;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -36,19 +39,30 @@ public class ChoiceManager : MonoBehaviour
         
     }
 
-    public void EnableDialoguePanel()
+    public void EnableDialoguePanel(string x)
     {
+        path = x;
+        print("Choices");
+        blank = Resources.Load<TextAsset>(x);
+        textlines = (blank.text.Split('\n'));
         Dialoguepanel.SetActive(true);
+        Button1Text.text = textlines[0];
+        Button2Text.text = textlines[1];
+        Button3Text.text = textlines[2];
+        Button4Text.text = textlines[3];
+        Button5Text.text = textlines[4];
         active = true;
-        currline++;
     }
 
     public void EnableChoicePanel(string x)
     {
-        StreamReader reader = new StreamReader(x);
+        path = x;
+        print("Choices");
+        blank = Resources.Load<TextAsset>(x);
+        textlines = (blank.text.Split('\n'));
         ChoicePanel.SetActive(true);
-        Choice1Text.text = reader.ReadLine();
-        Choice2Text.text = reader.ReadLine();
+        Choice1Text.text = textlines[0];
+        Choice2Text.text = textlines[1];
         active = true;
     }
 
@@ -62,4 +76,15 @@ public class ChoiceManager : MonoBehaviour
         ChoicePanel.SetActive(false);
     }
 
+    public void StayClick()
+    {
+        print(path);
+        if (path == @"Dialogue\Bartender\BTOPTIONS1")
+        {
+            print("working");
+            texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTstay");
+            DisableChoicePanel();
+            texting.EnableTextBox();
+        }
+    }
 }
