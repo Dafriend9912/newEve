@@ -16,7 +16,8 @@ public class TextManager : MonoBehaviour
     public TextAsset blank;
     public string story;
     public bool CR = false;
-    public static Text nameText;
+    public Text nameText;
+    public ChoiceManager Choices;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +66,11 @@ public class TextManager : MonoBehaviour
             currline++;
             DisableTextBox();
         }
+        if (textlines[currline].ToCharArray()[0] == '$')
+        {
+            Choices.EnableChoicePanel(textlines[currline].Substring(1));
+            DisableTextBox();
+        }
         textbox.SetActive(true);
         active = true;
         theText.text = textlines[currline];
@@ -107,6 +113,17 @@ public class TextManager : MonoBehaviour
                 {
                     nameText.text = textlines[currline].Substring(1);
                     currline++;
+                }
+                if (textlines[currline].ToCharArray()[0] == '#')
+                {
+                    nameText.text = textlines[currline].Substring(1);
+                    currline++;
+                }
+                if (textlines[currline].ToCharArray()[0] == '$')
+                {
+                    nameText.text = textlines[currline].Substring(1);
+                    DisableTextBox();
+                    Choices.EnableChoicePanel(textlines[currline].Substring(1));
                 }
                 theText.text = textlines[currline];
                 story = theText.text; 
