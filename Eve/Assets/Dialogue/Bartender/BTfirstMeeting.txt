@@ -1,16 +1,12 @@
-Bartender:
-Ah! you must be detective [Name]
-
-You:
-Yep, I'm guessing you're [Name]
-
-Bartender:
+@Bartender
+Ah! you must be The Detective
+@You
+Yep, I'm guessing you're The Bartender
+@Bartender
 Thanks for coming, I wouldn't have asked for you if this wasn't very important
-
-You:
+@You
 Of course, any murder is serious business, but you've got to tell me more. How do you even know a murder is going to happen?
-
-Bartender:
+@Bartender
 Well... to be completely honest, I don't have any evidence.
 Two nights ago as I was trying to place a call to my wife to tell her I'd be home later than usual.
 When I picked up the phone I found it was already in use.
@@ -24,14 +20,13 @@ There's only two other phones here. One in the owners office, and one behind the
 I quietly put the phone back down to go look for them so I could figure out who it was.
 I must have not been as quiet as I thought I was because when I got behind stage, whoever was on the phone had left.
 The phone was hanging off the hook though, so I'm sure they must have been there!
-
-You:
+@You
 (Hmm... so there might be two murderers involved in this case...)
-
-Bartender:
+@Bartender
 I went and talked to the owner about cancelling the Gala, but he said that was insane, and that he wouldn't do it without concrete evidence.
 That's why I hired you.
 I'm sorry I don't know much more than that, but you should ask around.
-The owner knows the most of what's going on around here.
-[Main Dancer] is who you'll want to talk to if you want to know more about people. She's the clubs most popular dancer and she knows it.
-Also if you've got a minute, you could talk to [Musician], he's the musician here and a good friend of mine.
+The Owner knows the most of what's going on around here.
+The Main Dancer is who you'll want to talk to if you want to know more about people. She's the clubs most popular dancer and she knows it.
+Also if you've got a minute, you could talk to The Musician, he's a good friend of mine.
+#BTOPTIONS1.txt

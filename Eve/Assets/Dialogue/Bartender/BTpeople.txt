@@ -1,7 +1,6 @@
-You:
+@You
 You seem to get a lot of human traffic here at the bar. Can you tell me more about some of the workers or customers?
-
-Bartender:
+@Bartender
 Of course.
 The owner is an okay guy. I've been working here for years now and he's never done anything awful.
 He pays well and manages the club, but I think there might be something bad between him and the stage director.
@@ -18,10 +17,9 @@ He seems decent enough, rarely talks.
 There's also a fellow who comes by every now and then.
 He's a real big shot, makes a lot of money gambling at a nearby casino.
 That being said, he's very smart with his money, and equally cunning.
-
-You:
+@You
 (Sounds like I'll have to wait to see the customers, but I should be able to go find that boxer now if I want to...)
 Thanks for the help.
-
-Bartender:
+@Bartender
 Of course.
+#BTOPTIONS2.txt
