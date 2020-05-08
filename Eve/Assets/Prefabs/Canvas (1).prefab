@@ -243,22 +243,22 @@ PrefabInstance:
     - target: {fileID: 1663865660094588716, guid: 8fb119f166b1241c3b70cdeab9f5cbce,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.4
+      value: 0.000002592802
       objectReference: {fileID: 0}
     - target: {fileID: 1663865660094588716, guid: 8fb119f166b1241c3b70cdeab9f5cbce,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.8
+      value: -167.40002
       objectReference: {fileID: 0}
     - target: {fileID: 1663865660094588716, guid: 8fb119f166b1241c3b70cdeab9f5cbce,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 922.3
+      value: 913.9
       objectReference: {fileID: 0}
     - target: {fileID: 1663865660094588716, guid: 8fb119f166b1241c3b70cdeab9f5cbce,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 517.7
+      value: 177.3
       objectReference: {fileID: 0}
     - target: {fileID: 1663865660094588716, guid: 8fb119f166b1241c3b70cdeab9f5cbce,
         type: 3}
@@ -373,22 +373,22 @@ PrefabInstance:
     - target: {fileID: 1294833282917878284, guid: dde8e9014804744dc95c7b892f666fbc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.4
+      value: 0.000002592802
       objectReference: {fileID: 0}
     - target: {fileID: 1294833282917878284, guid: dde8e9014804744dc95c7b892f666fbc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.8
+      value: -167.40002
       objectReference: {fileID: 0}
     - target: {fileID: 1294833282917878284, guid: dde8e9014804744dc95c7b892f666fbc,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 922.3
+      value: 913.9
       objectReference: {fileID: 0}
     - target: {fileID: 1294833282917878284, guid: dde8e9014804744dc95c7b892f666fbc,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 517.7
+      value: 177.3
       objectReference: {fileID: 0}
     - target: {fileID: 1294833282917878284, guid: dde8e9014804744dc95c7b892f666fbc,
         type: 3}
@@ -439,6 +439,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MapPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410048126899239827, guid: a176d6fc5b2524715b755517f3c86650,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6607195636203592928, guid: a176d6fc5b2524715b755517f3c86650,
         type: 3}
@@ -699,6 +704,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: night_club_panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771181128953346607, guid: 6baada54025515e488ac058cf5cab227,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6baada54025515e488ac058cf5cab227, type: 3}
