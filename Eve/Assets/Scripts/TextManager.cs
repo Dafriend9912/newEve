@@ -66,6 +66,11 @@ public class TextManager : MonoBehaviour
             currline++;
             DisableTextBox();
         }
+        if (textlines[currline].ToCharArray()[0] == '$')
+        {
+            Choices.EnableChoicePanel(textlines[currline].Substring(1));
+            DisableTextBox();
+        }
         textbox.SetActive(true);
         active = true;
         theText.text = textlines[currline];
@@ -117,7 +122,8 @@ public class TextManager : MonoBehaviour
                 if (textlines[currline].ToCharArray()[0] == '$')
                 {
                     nameText.text = textlines[currline].Substring(1);
-                    currline++;
+                    DisableTextBox();
+                    Choices.EnableChoicePanel(textlines[currline].Substring(1));
                 }
                 theText.text = textlines[currline];
                 story = theText.text; 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.IO;
 
 public class ChoiceManager : MonoBehaviour
 {
@@ -42,29 +43,23 @@ public class ChoiceManager : MonoBehaviour
         currline++;
     }
 
-    public void EnableChoicePanel()
+    public void EnableChoicePanel(string x)
     {
+        StreamReader reader = new StreamReader(x);
         ChoicePanel.SetActive(true);
+        Choice1Text.text = reader.ReadLine();
+        Choice2Text.text = reader.ReadLine();
         active = true;
-        currline++;
     }
 
     public void DisableDialoguePanel()
     {
         Dialoguepanel.SetActive(false);
-        active = false;
-        textlines = new string[] { "  ", "  " };
     }
 
     public void DisableChoicePanel()
     {
         ChoicePanel.SetActive(false);
-        active = false;
-        textlines = new string[] { "  ", "  " };
     }
 
-    public void Importtext(string x)
-    {
-        blank = Resources.Load(x) as TextAsset;
-    }
 }
