@@ -29,4 +29,4 @@ I'm sorry I don't know much more than that, but you should ask around.
 The Owner knows the most of what's going on around here.
 The Main Dancer is who you'll want to talk to if you want to know more about people. She's the clubs most popular dancer and she knows it.
 Also if you've got a minute, you could talk to The Musician, he's a good friend of mine.
-#BTOPTIONS1.txt
+$BTOPTIONS1.txt
