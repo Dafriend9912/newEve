@@ -22,4 +22,6 @@ I put clues together to save lives; I'll let my accountant handle the money.
 Sorry, didn't mean any offence.
 @You
 None taken, just trying to get as much info as possible.
-#BTOPTIONS3.txt
+@Bartender
+Good to hear it, is there anything else you would like to know?
+$Dialogue\Bartender\BTOPTIONS1

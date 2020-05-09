@@ -21,5 +21,5 @@ That being said, he's very smart with his money, and equally cunning.
 (Sounds like I'll have to wait to see the customers, but I should be able to go find that boxer now if I want to...)
 Thanks for the help.
 @Bartender
-Of course.
-#BTOPTIONS3.txt
+Of course, is there any other way I can help?
+$Dialogue\Bartender\BTOPTIONS1
