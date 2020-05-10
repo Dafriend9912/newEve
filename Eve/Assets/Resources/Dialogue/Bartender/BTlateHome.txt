@@ -1,30 +1,23 @@
-You:
+@You
 You said you overheard the phone call pretty late in the evening, correct?
-
-Bartender:
+@Bartender
 Yes, it must have been close to 4am, almost 2 hours after we close
-
-You:
+@You
 And you said that the reason for picking up the phone was to call your wife. Is this common for you two?
-
-Bartender:
+@Bartender
 No, this almost never happens.
 The club closes at 2am. Since I do most of the cleaning and closing of the night, I usually don't get done until 3am.
-
-You:
+@You
 So what happened that made you stay later?
-
-Bartender:
+@Bartender
 We had an especially busy day.
 There was a group that came in just before closing and got very drunk.
 They were loud and rude, but their pockets were overflowing with money, so the owner told me to suck it up and serve them.
 They ended up not leaving until around 2:30.
-
-You:
+@You
 I see, so that's why you were here late?
-
-Bartender:
+@Bartender
 Yes. My wife usually waits up for me before going to bed, so that's why I called her
-
-You:
+@You
 (Sounds like a good relationship, makes me a bit jealous)
+#BTOPTIONS3.txt

@@ -15,19 +15,13 @@ public class TextManager : MonoBehaviour
     public bool active;
     public TextAsset blank;
     public string story;
+    public bool CR = false;
+    public Text nameText;
+    public ChoiceManager Choices;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (text != null)
-        {
-            textlines = (text.text.Split('\n'));
-        }
-
-        if (endline == 0)
-        {
-            endline = textlines.Length;
-        }
         if (active)
         {
             EnableTextBox();
@@ -51,8 +45,30 @@ public class TextManager : MonoBehaviour
 
     public void EnableTextBox()
     {
+        if (text != null)
+        {
+            textlines = (text.text.Split('\n'));
+        }
 
-        
+        if (endline == 0)
+        {
+            endline = textlines.Length;
+        }
+        if (textlines[currline].ToCharArray()[0] == '@')
+        {
+            nameText.text = textlines[currline].Substring(1);
+            currline++;
+        }
+        else if (textlines[currline].ToCharArray()[0] == '#')
+        {
+            Choices.EnableDialoguePanel(textlines[currline].Substring(1));
+            DisableTextBox();
+        }
+        else if (textlines[currline].ToCharArray()[0] == '$')
+        {
+            Choices.EnableChoicePanel(textlines[currline].Substring(1));
+            DisableTextBox();
+        }
         textbox.SetActive(true);
         active = true;
         theText.text = textlines[currline];
@@ -66,6 +82,8 @@ public class TextManager : MonoBehaviour
     {
         textbox.SetActive(false);
         active = false;
+        currline = 0;
+        endline = 0;
         textlines = new string[]{"  ", "  "};
         theText.text = "";
     }
@@ -84,10 +102,28 @@ public class TextManager : MonoBehaviour
         print("testing");
         if (active)
         {
-            
+            if (CR)
+            {
+                Skip();
+                return;
+            }
             if(currline < endline)
             {
-            
+                if(textlines[currline].ToCharArray()[0] == '@')
+                {
+                    nameText.text = textlines[currline].Substring(1);
+                    currline++;
+                }
+                else if (textlines[currline].ToCharArray()[0] == '#')
+                {
+                    Choices.EnableDialoguePanel(textlines[currline].Substring(1));
+                    DisableTextBox();
+                }
+                else if (textlines[currline].ToCharArray()[0] == '$')
+                {
+                    Choices.EnableChoicePanel(textlines[currline].Substring(1));
+                    DisableTextBox();
+                }
                 theText.text = textlines[currline];
                 story = theText.text; 
                 theText.text = "";
@@ -101,12 +137,25 @@ public class TextManager : MonoBehaviour
            
         }
     }
+
+    public void Skip()
+    {
+        if (active)
+        {
+            CR = false;
+            StopCoroutine("PlayText");
+            theText.text = "";
+            theText.text = story;
+        }
+    }
     IEnumerator PlayText()
     {
+        CR = true;
         foreach (char c in story) 
         {
             theText.text += c;
-            yield return new WaitForSeconds (0.125f);
+            yield return new WaitForSeconds (0.050f);
         }
+        CR = false;
     }
 }

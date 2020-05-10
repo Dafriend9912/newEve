@@ -1,0 +1,31 @@
+@You
+What about this Gala coming up?
+@Owner
+URGH!
+The Gala is the reason I'm so busy right now!
+It's great for sales, but it always makes so much work!
+I've got to buy the costumes, buy the alcohol, and buy the decorations.
+It's in only 5 days now and I haven't even started!
+URGH!
+I've got too much to do.
+@You
+If the Gala is such a busy time, why not have other co-workers help out?
+@Owner
+What?? Entrust my precious annual Gala to the likes of them??
+The only one I trust to do his work around here is the stage manager!
+He knows how to set up a good show, and a good show is exactly what we need!
+The Gala is extrememely important to my business, the nightclub will always be packed during it!
+I'll make so much money!
+@You
+The Bartender must have told you that the Gala is when the possible murder will happen right?
+@Owner
+He doesn't know what he's talking about.
+Asking me to cancel the Gala on a mere suspicion?
+Insane! I wont do it!
+@You
+You'd endanger your own staff just for the sake of the Gala?
+@Owner
+You don't seem to get it either.
+THEY ARE NOT IN DANGER!
+THERE WILL BE NO MURDER!
+#ONOPTIONS3.txt

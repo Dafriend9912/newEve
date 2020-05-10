@@ -1,0 +1,19 @@
+@You
+You keep saying that you're very busy, but I don't see how you have all this work to do...
+@Owner
+What are you implying?
+@You
+Nothing yet, but I'm starting to suspect you're not telling me something.
+@Owner
+I've got a lot of work to do!
+@You
+That's not the problem I have with your statement.
+You may have a lot of work to do, but it doesn't sound like you're even trying to get it done.
+@Owner
+URGH!
+That's... That's not true!
+Show me the evidence Mr. "Detective".
+@You
+For starters, you didn't even know I was here investigating the club.
+You also say that the Gala is in less than a week, but it sounds like you haven't even started with preparations.
+ONOPTIONS4.txt

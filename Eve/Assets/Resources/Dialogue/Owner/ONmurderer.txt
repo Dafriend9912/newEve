@@ -1,0 +1,32 @@
+@You
+You haven't been preparing for the Gala because you don't think it will happen!
+I've only just got here but I can already tell that you're one of the future murderers!
+I'm not sure who yet but if you murder someone on the night of the Gala, then why would you care if the decorations and such are set up?
+You wouldn't. The Gala will be ruined either way, so why bother?
+@Owner
+WHAT?
+@You
+The bartender mentioned that one of the only phones in this club was in your office, you must have made the call a few nights ago!
+@Owner
+NO!
+That's not true!
+URGH... It's not that...
+I'm...
+@You
+(is it possible there's something else I'm missing?)
+@Owner
+URGH...
+I'm horribly lazy, alright?
+I'd never even think about murder, I just... I can't make myself do the work I need to do.
+@You
+Huh?
+@Owner
+That's why I'm always busy, because I never seem to get any of my work done.
+To be truthful, there's no way I'd be able to run this club alone.
+@You
+(Sounds like all of his "big talk" was just to hide this from me)
+So how are you running this club?
+@Owner
+It's the Stage Director, he helps me out the most.
+I still think you're wrong about there being a murder, but even if you're not, it's not me.
+ONOTIONS3.txt
