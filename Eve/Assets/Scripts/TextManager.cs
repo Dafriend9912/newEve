@@ -45,6 +45,7 @@ public class TextManager : MonoBehaviour
 
     public void EnableTextBox()
     {
+        currline = 0;
         if (text != null)
         {
             textlines = (text.text.Split('\n'));

@@ -24,7 +24,7 @@ public class ChoiceManager : MonoBehaviour
     public Text nameText;
     public TextManager texting;
     public string path;
-   
+    public bool choosing = false;
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +51,7 @@ public class ChoiceManager : MonoBehaviour
         Button3Text.text = textlines[2];
         Button4Text.text = textlines[3];
         Button5Text.text = textlines[4];
-        active = true;
+        choosing = true;
     }
 
     public void EnableChoicePanel(string x)
@@ -85,6 +85,78 @@ public class ChoiceManager : MonoBehaviour
             texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTstay");
             DisableChoicePanel();
             texting.EnableTextBox();
+        }
+    }
+
+    public void DialogueClickButton1()
+    {
+        if (choosing)
+        {
+            print(Button1Text.text);
+            print(textlines[0]);
+            if (path == @"Dialogue\Bartender\BTOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTgala");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+        }
+    }
+
+    public void DialogueClickButton2()
+    {
+        if (choosing)
+        {
+            if (path == @"Dialogue\Bartender\BTOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTmoreSelf");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+        }
+    }
+
+    public void DialogueClickButton3()
+    {
+        if (choosing)
+        {
+            if (path == @"Dialogue\Bartender\BTOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTlateHome");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+        }
+    }
+    public void DialogueClickButton4()
+    {
+        if (choosing)
+        {
+            if (path == @"Dialogue\Bartender\BTOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTpeople");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+        }
+    }
+
+    public void DialogueClickButton5()
+    {
+        if (choosing)
+        {
+            if (path == @"Dialogue\Bartender\BTOPTIONS3")
+            {
+                return;
+            }
         }
     }
 }
