@@ -13,4 +13,6 @@ It's possible
 I'm usually one of the last people to leave at night, so if they needed to communicate, it's likely that one of them had already gone home for the day.
 @You
 (So I know one of them must work here, but can't be sure that they both work here...)
-#BTOPTIONS3.txt
+@Bartender
+Any other way I can help?
+$Dialogue\Bartender\BTOPTIONS1

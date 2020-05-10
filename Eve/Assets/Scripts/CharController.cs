@@ -12,7 +12,7 @@ public class CharController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( manage.nameText.ToString() == "You")
+        if ( manage.nameText.text == "You")
         {
             Other.SetActive(false);
             Player.SetActive(true);

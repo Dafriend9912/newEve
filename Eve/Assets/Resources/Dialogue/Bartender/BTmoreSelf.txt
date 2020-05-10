@@ -28,4 +28,5 @@ In all my years bartending I've never seen an owner act like that.
 Why do you think he acts that way?
 @Bartender
 I don't know, it sure as hell doesn't make sense to me.
-#BTOPTIONS3.txt
+But that aside, anything else you want to ask?
+$Dialogue\Bartender\BTOPTIONS1
