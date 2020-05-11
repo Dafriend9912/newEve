@@ -521,6 +521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 2905944028095134437}
   Other: {fileID: 7728117088726331609}
+  manage: {fileID: 0}
 --- !u!1 &3333958094810041321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +1529,36 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &7364574525762574144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8381978376904587246}
+  m_Layer: 0
+  m_Name: TextManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8381978376904587246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7364574525762574144}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 422.84375, y: 232.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1716186881065977434}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7728117088726331609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,6 +1666,7 @@ RectTransform:
   - {fileID: 2787682712164188472}
   - {fileID: 2805133968197153296}
   - {fileID: 8536675146019166800}
+  - {fileID: 8381978376904587246}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
