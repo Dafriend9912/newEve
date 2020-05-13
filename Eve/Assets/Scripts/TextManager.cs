@@ -18,6 +18,8 @@ public class TextManager : MonoBehaviour
     public bool CR = false;
     public Text nameText;
     public ChoiceManager Choices;
+    public CharController Chars;
+    public string speaker;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +60,7 @@ public class TextManager : MonoBehaviour
         if (textlines[currline].ToCharArray()[0] == '@')
         {
             nameText.text = textlines[currline].Substring(1);
+            speaker = textlines[currline].Substring(1).ToString();
             currline++;
         }
         else if (textlines[currline].ToCharArray()[0] == '#')
@@ -72,6 +75,7 @@ public class TextManager : MonoBehaviour
         }
         textbox.SetActive(true);
         active = true;
+        Chars.Chars();
         theText.text = textlines[currline];
         story = theText.text; 
         theText.text = "";
@@ -113,6 +117,7 @@ public class TextManager : MonoBehaviour
                 if(textlines[currline].ToCharArray()[0] == '@')
                 {
                     nameText.text = textlines[currline].Substring(1);
+                    speaker = textlines[currline].Substring(1);
                     currline++;
                 }
                 else if (textlines[currline].ToCharArray()[0] == '#')
@@ -125,6 +130,7 @@ public class TextManager : MonoBehaviour
                     Choices.EnableChoicePanel(textlines[currline].Substring(1));
                     DisableTextBox();
                 }
+                Chars.Chars();
                 theText.text = textlines[currline];
                 story = theText.text; 
                 theText.text = "";
