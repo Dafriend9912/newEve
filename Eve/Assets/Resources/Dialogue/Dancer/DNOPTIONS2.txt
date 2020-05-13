@@ -1,5 +1,5 @@
 Go talk to The Owner
 Go talk to The Bartender
 Go talk to The Musician
-= Go Talk to The Boxer Requires BTPeople
+= Go Talk to The Boxer Requires BTPeople || DNboxer
 = Go Talk to The Stage Director Requires ONlazy || ONmurderer
