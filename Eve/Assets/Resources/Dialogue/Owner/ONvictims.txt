@@ -7,4 +7,4 @@ Well, that's my job
 = (Not that he would understand...)
 @Owner
 Fine, you should go talk to the Main Dancer, she knows the people here best.
-ONOPTIONS3.txt
+$Dialogue\Owner\ONOPTIONS1
