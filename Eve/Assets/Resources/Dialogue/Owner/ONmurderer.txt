@@ -29,4 +29,4 @@ So how are you running this club?
 @Owner
 It's the Stage Director, he helps me out the most.
 I still think you're wrong about there being a murder, but even if you're not, it's not me.
-ONOTIONS3.txt
+$Dialogue\Owner\ONOPTIONS1
