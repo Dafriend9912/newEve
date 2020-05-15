@@ -1,3 +1,4 @@
+%BTpeople
 @You
 You seem to get a lot of human traffic here at the bar. Can you tell me more about some of the workers or customers?
 @Bartender
