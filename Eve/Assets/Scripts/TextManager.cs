@@ -73,7 +73,25 @@ public class TextManager : MonoBehaviour
         {
             Choices.EnableChoicePanel(textlines[currline].Substring(1));
             DisableTextBox();
+        }else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
+        {
+            if(!choicesdict.ContainsKey(textlines[currline].Substring(1)))
+            {
+                choicesdict.Add(textlines[currline].Substring(1), true);
+            }
         }
+        else if (textlines[currline].ToCharArray()[0] == '^') //to look up something in the dictionary
+        {
+            bool t = true;
+            if (choicesdict.TryGetValue(textlines[currline].Substring(1), out t)) //for extra dialogue
+            {
+                        
+            } else 
+            {
+                        
+            }
+        }
+        
         textbox.SetActive(true);
         active = true;
         Chars.Chars();
@@ -141,7 +159,7 @@ public class TextManager : MonoBehaviour
                 else if (textlines[currline].ToCharArray()[0] == '^') //to look up something in the dictionary
                 {
                     bool t = true;
-                    if (choicesdict.TryGetValue(textlines[currline].Substring(1), out t))
+                    if (choicesdict.TryGetValue(textlines[currline].Substring(1), out t)) //for extra dialogue
                     {
                         
                     } else 
