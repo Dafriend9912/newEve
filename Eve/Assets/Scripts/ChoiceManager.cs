@@ -96,6 +96,13 @@ public class ChoiceManager : MonoBehaviour
             DisableChoicePanel();
             texting.EnableTextBox();
         }
+        if (path == @"Dialogue\Owner\ONOPTIONS1")
+        {
+            print("working");
+            texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONstay");
+            DisableChoicePanel();
+            texting.EnableTextBox();
+        }
     }
 
     public void LeaveClick()
@@ -127,6 +134,14 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONjob");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
         }
     }
 
@@ -138,6 +153,14 @@ public class ChoiceManager : MonoBehaviour
             {
                 print("working");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTmoreSelf");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONgala");
                 DisableDialoguePanel();
                 texting.EnableTextBox();
                 choosing = false;
@@ -157,6 +180,14 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONvictims");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
         }
     }
     public void DialogueClickButton4()
@@ -171,6 +202,14 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONmurderer");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
         }
     }
 
@@ -178,6 +217,10 @@ public class ChoiceManager : MonoBehaviour
     {
         if (choosing)
         {
+            if (path == @"Dialogue\Bartender\BTOPTIONS3")
+            {
+                return;
+            }
             if (path == @"Dialogue\Bartender\BTOPTIONS3")
             {
                 return;

@@ -80,18 +80,28 @@ public class TextManager : MonoBehaviour
                 choicesdict.Add(textlines[currline].Substring(1), true);
             }
         }
-        else if (textlines[currline].ToCharArray()[0] == '^') //to look up something in the dictionary
+        else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
         {
-            bool t = true;
-            if (choicesdict.TryGetValue(textlines[currline].Substring(1), out t)) //for extra dialogue
+            print("OKAY IT SEES THE %");
+            if (!choicesdict.ContainsKey(textlines[currline].Substring(1)))
             {
-                        
-            } else 
-            {
-                        
+                print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
+                choicesdict.Add(textlines[currline].Substring(1), true);
+                string ret = choicesdict[textlines[currline].Substring(1)].ToString();
+                print(ret);
             }
         }
-        
+        else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
+        {
+            print("OKAY IT SEES THE %");
+            if (!choicesdict.ContainsKey(textlines[currline].Substring(1)))
+            {
+                print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
+                choicesdict.Add(textlines[currline].Substring(1), true);
+                string ret = choicesdict[textlines[currline].Substring(1)].ToString();
+                print(ret);
+            }
+        }
         textbox.SetActive(true);
         active = true;
         Chars.Chars();
@@ -151,8 +161,10 @@ public class TextManager : MonoBehaviour
                 }
                 else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
                 {
+                    print("OKAY IT SEES THE %");
                     if(!choicesdict.ContainsKey(textlines[currline].Substring(1)))
                     {
+                        print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
                         choicesdict.Add(textlines[currline].Substring(1), true);
                         print(choicesdict.Keys);
                     } 
@@ -162,7 +174,7 @@ public class TextManager : MonoBehaviour
                     bool t = true;
                     if (choicesdict.TryGetValue(textlines[currline].Substring(1), out t)) //for extra dialogue
                     {
-                        
+                        print("heythisruns");
                     } else 
                     {
                         

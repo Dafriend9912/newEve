@@ -28,4 +28,4 @@ You'd endanger your own staff just for the sake of the Gala?
 You don't seem to get it either.
 THEY ARE NOT IN DANGER!
 THERE WILL BE NO MURDER!
-#ONOPTIONS3.txt
+$Dialogue\Owner\ONOPTIONS1
