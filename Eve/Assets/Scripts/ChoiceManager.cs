@@ -8,6 +8,8 @@ using System.IO;
 public class ChoiceManager : MonoBehaviour
 {
     public GameObject Dialoguepanel;
+    public GameObject mapPanel;
+    public GameObject locations;
     public TextMeshProUGUI Button1Text;
     public TextMeshProUGUI Button2Text;
     public TextMeshProUGUI Button3Text;
@@ -86,6 +88,21 @@ public class ChoiceManager : MonoBehaviour
             DisableChoicePanel();
             texting.EnableTextBox();
         }
+    }
+
+    public void LeaveClick()
+    {
+        print("leaving");
+        //texting.text = Resources.Load<TextAsset>(@"Dialoguepanel\Bartender\BTleave");
+        for (int i = 0; i < locations.transform.childCount; i++)
+        {
+            var child = locations.transform.GetChild(i).gameObject;
+            if (child != null)
+                child.SetActive(false);
+        }
+        mapPanel.SetActive(true);
+        print(mapPanel.activeSelf ? "Active" : "Inactive");
+        DisableChoicePanel();
     }
 
     public void DialogueClickButton1()
