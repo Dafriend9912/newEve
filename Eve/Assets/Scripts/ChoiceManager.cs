@@ -52,16 +52,30 @@ public class ChoiceManager : MonoBehaviour
         Button2Text.text = textlines[1];
         Button3Text.text = textlines[2];
         Button4Text.text = textlines[3];
-        if (texting.choicesdict.ContainsValue(textlines[currline].Substring(1))) //checking for buttons
+        bool t = true;
+        if (textlines[4].ToCharArray()[0] == '^') //to look up something in the dictionary
         {
-            Button5Text.text = textlines[4];
-        }
-        else 
-        {
-            Button5Text.text = "";
-        }
+            print("testing carrot");
+            foreach (KeyValuePair<string, bool> key in texting.choicesdict)
+            {
+                print(key.Key+" + "+ key.Value);
+            }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print(textlines[5]);
+                print(texting.choicesdict.ContainsKey("ONgala"));
+                if (texting.choicesdict.ContainsKey("ONgala") && texting.choicesdict.ContainsKey("ONjob"))
+                {
+                    Button5Text.text = textlines[5];
+                }
+                else
+                {
+                    Button5Text.text = "";
+                }
+            }
 
-        choosing = true;
+            choosing = true;
+        }
     }
 
     public void EnableChoicePanel(string x)
@@ -221,9 +235,19 @@ public class ChoiceManager : MonoBehaviour
             {
                 return;
             }
-            if (path == @"Dialogue\Bartender\BTOPTIONS3")
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
             {
-                return;
+                if (texting.choicesdict.ContainsKey("ONgala") && texting.choicesdict.ContainsKey("ONjob"))
+                {
+                    texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONwork");
+                    DisableDialoguePanel();
+                    texting.EnableTextBox();
+                    choosing = false;
+                }
+                else
+                {
+                   return;
+                }
             }
         }
     }

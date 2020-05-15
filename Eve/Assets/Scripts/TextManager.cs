@@ -73,12 +73,6 @@ public class TextManager : MonoBehaviour
         {
             Choices.EnableChoicePanel(textlines[currline].Substring(1));
             DisableTextBox();
-        }else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
-        {
-            if(!choicesdict.ContainsKey(textlines[currline].Substring(1)))
-            {
-                choicesdict.Add(textlines[currline].Substring(1), true);
-            }
         }
         else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
         {
@@ -86,20 +80,13 @@ public class TextManager : MonoBehaviour
             if (!choicesdict.ContainsKey(textlines[currline].Substring(1)))
             {
                 print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
-                choicesdict.Add(textlines[currline].Substring(1), true);
-                string ret = choicesdict[textlines[currline].Substring(1)].ToString();
+                choicesdict.Add(textlines[currline].Substring(1).Trim(), true);
+                string ret = choicesdict[textlines[currline].Substring(1).Trim()].ToString();
                 print(ret);
-            }
-        }
-        else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
-        {
-            print("OKAY IT SEES THE %");
-            if (!choicesdict.ContainsKey(textlines[currline].Substring(1)))
-            {
-                print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
-                choicesdict.Add(textlines[currline].Substring(1), true);
-                string ret = choicesdict[textlines[currline].Substring(1)].ToString();
-                print(ret);
+                currline++;
+                nameText.text = textlines[currline].Substring(1);
+                speaker = textlines[currline].Substring(1).ToString();
+                currline++;
             }
         }
         textbox.SetActive(true);
@@ -162,12 +149,13 @@ public class TextManager : MonoBehaviour
                 else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
                 {
                     print("OKAY IT SEES THE %");
-                    if(!choicesdict.ContainsKey(textlines[currline].Substring(1)))
+                    if(!choicesdict.ContainsKey(textlines[currline].Substring(1).Trim()))
                     {
                         print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
-                        choicesdict.Add(textlines[currline].Substring(1), true);
-                        print(choicesdict.Keys);
-                    } 
+                        print(textlines[currline]);
+                        choicesdict.Add(textlines[currline].Substring(1).Trim(), true);
+                        currline++;
+                    }
                 }
                 else if (textlines[currline].ToCharArray()[0] == '^') //to look up something in the dictionary
                 {
