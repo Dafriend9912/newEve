@@ -172,7 +172,7 @@ public class TextManager : MonoBehaviour
                 else if (textlines[currline].ToCharArray()[0] == '^') //to look up something in the dictionary
                 {
                     bool t = true;
-                    if (choicesdict.TryGetValue(textlines[currline].Substring(1), out t)) //for extra dialogue
+                    if (!choicesdict.ContainsKey(textlines[currline].Substring(1))) //for extra dialogue
                     {
                         print("heythisruns");
                     } else 
