@@ -74,6 +74,17 @@ public class TextManager : MonoBehaviour
             Choices.EnableChoicePanel(textlines[currline].Substring(1));
             DisableTextBox();
         }
+        else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
+        {
+            print("OKAY IT SEES THE %");
+            if (!choicesdict.ContainsKey(textlines[currline].Substring(1)))
+            {
+                print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
+                choicesdict.Add(textlines[currline].Substring(1), true);
+                string ret = choicesdict[textlines[currline].Substring(1)].ToString();
+                print(ret);
+            }
+        }
         textbox.SetActive(true);
         active = true;
         Chars.Chars();
@@ -133,8 +144,10 @@ public class TextManager : MonoBehaviour
                 }
                 else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
                 {
+                    print("OKAY IT SEES THE %");
                     if(!choicesdict.ContainsKey(textlines[currline].Substring(1)))
                     {
+                        print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
                         choicesdict.Add(textlines[currline].Substring(1), true);
                     }
                 }
@@ -143,7 +156,7 @@ public class TextManager : MonoBehaviour
                     bool t = true;
                     if (choicesdict.TryGetValue(textlines[currline].Substring(1), out t))
                     {
-                        
+                        print("heythisruns");
                     } else 
                     {
                         
