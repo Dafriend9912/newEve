@@ -20,6 +20,7 @@ public class TextManager : MonoBehaviour
     public ChoiceManager Choices;
     public CharController Chars;
     public string speaker;
+    public Dictionary<string, bool> choicesdict = new Dictionary<string, bool>();
 
     // Start is called before the first frame update
     void Start()
@@ -130,6 +131,26 @@ public class TextManager : MonoBehaviour
                     Choices.EnableChoicePanel(textlines[currline].Substring(1));
                     DisableTextBox();
                 }
+                else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
+                {
+                    if(!choicesdict.ContainsKey(textlines[currline].Substring(1)))
+                    {
+                        choicesdict.Add(textlines[currline].Substring(1), true);
+                    }
+                }
+                else if (textlines[currline].ToCharArray()[0] == '^') //to look up something in the dictionary
+                {
+                    bool t = true;
+                    if (choicesdict.TryGetValue(textlines[currline].Substring(1), out t))
+                    {
+                        
+                    } else 
+                    {
+                        
+                    }
+                }
+                //% change
+                //^ look up 
                 Chars.Chars();
                 theText.text = textlines[currline];
                 story = theText.text; 
