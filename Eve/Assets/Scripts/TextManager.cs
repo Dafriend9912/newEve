@@ -154,7 +154,8 @@ public class TextManager : MonoBehaviour
                     if(!choicesdict.ContainsKey(textlines[currline].Substring(1)))
                     {
                         choicesdict.Add(textlines[currline].Substring(1), true);
-                    }
+                        print(choicesdict.Keys);
+                    } 
                 }
                 else if (textlines[currline].ToCharArray()[0] == '^') //to look up something in the dictionary
                 {

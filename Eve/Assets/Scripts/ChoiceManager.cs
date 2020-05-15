@@ -52,8 +52,7 @@ public class ChoiceManager : MonoBehaviour
         Button2Text.text = textlines[1];
         Button3Text.text = textlines[2];
         Button4Text.text = textlines[3];
-        bool t = true;
-        if (texting.choicesdict.TryGetValue(textlines[currline].Substring(1), out t)) //checking for buttons
+        if (texting.choicesdict.ContainsValue(textlines[currline].Substring(1))) //checking for buttons
         {
             Button5Text.text = textlines[4];
         }
