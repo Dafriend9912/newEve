@@ -1,4 +1,3 @@
-{Options}
 Ask about his job
 Ask about the Gala
 Ask about potential victims.
