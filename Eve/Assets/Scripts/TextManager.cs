@@ -20,6 +20,7 @@ public class TextManager : MonoBehaviour
     public ChoiceManager Choices;
     public CharController Chars;
     public string speaker;
+    public Dictionary<string, bool> choicesdict = new Dictionary<string, bool>();
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +73,21 @@ public class TextManager : MonoBehaviour
         {
             Choices.EnableChoicePanel(textlines[currline].Substring(1));
             DisableTextBox();
+        }
+        else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
+        {
+            print("OKAY IT SEES THE %");
+            if (!choicesdict.ContainsKey(textlines[currline].Substring(1)))
+            {
+                print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
+                choicesdict.Add(textlines[currline].Substring(1).Trim(), true);
+                string ret = choicesdict[textlines[currline].Substring(1).Trim()].ToString();
+                print(ret);
+                currline++;
+                nameText.text = textlines[currline].Substring(1);
+                speaker = textlines[currline].Substring(1).ToString();
+                currline++;
+            }
         }
         textbox.SetActive(true);
         active = true;
@@ -130,6 +146,30 @@ public class TextManager : MonoBehaviour
                     Choices.EnableChoicePanel(textlines[currline].Substring(1));
                     DisableTextBox();
                 }
+                else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
+                {
+                    print("OKAY IT SEES THE %");
+                    if(!choicesdict.ContainsKey(textlines[currline].Substring(1).Trim()))
+                    {
+                        print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
+                        print(textlines[currline]);
+                        choicesdict.Add(textlines[currline].Substring(1).Trim(), true);
+                        currline++;
+                    }
+                }
+                else if (textlines[currline].ToCharArray()[0] == '^') //to look up something in the dictionary
+                {
+                    bool t = true;
+                    if (!choicesdict.ContainsKey(textlines[currline].Substring(1))) //for extra dialogue
+                    {
+                        print("heythisruns");
+                    } else 
+                    {
+                        
+                    }
+                }
+                //% change
+                //^ look up 
                 Chars.Chars();
                 theText.text = textlines[currline];
                 story = theText.text; 

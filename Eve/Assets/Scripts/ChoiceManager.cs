@@ -8,6 +8,8 @@ using System.IO;
 public class ChoiceManager : MonoBehaviour
 {
     public GameObject Dialoguepanel;
+    public GameObject mapPanel;
+    public GameObject locations;
     public TextMeshProUGUI Button1Text;
     public TextMeshProUGUI Button2Text;
     public TextMeshProUGUI Button3Text;
@@ -50,8 +52,30 @@ public class ChoiceManager : MonoBehaviour
         Button2Text.text = textlines[1];
         Button3Text.text = textlines[2];
         Button4Text.text = textlines[3];
-        Button5Text.text = textlines[4];
-        choosing = true;
+        bool t = true;
+        if (textlines[4].ToCharArray()[0] == '^') //to look up something in the dictionary
+        {
+            print("testing carrot");
+            foreach (KeyValuePair<string, bool> key in texting.choicesdict)
+            {
+                print(key.Key+" + "+ key.Value);
+            }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print(textlines[5]);
+                print(texting.choicesdict.ContainsKey("ONgala"));
+                if (texting.choicesdict.ContainsKey("ONgala") && texting.choicesdict.ContainsKey("ONjob"))
+                {
+                    Button5Text.text = textlines[5];
+                }
+                else
+                {
+                    Button5Text.text = "";
+                }
+            }
+
+            choosing = true;
+        }
     }
 
     public void EnableChoicePanel(string x)
@@ -86,6 +110,28 @@ public class ChoiceManager : MonoBehaviour
             DisableChoicePanel();
             texting.EnableTextBox();
         }
+        if (path == @"Dialogue\Owner\ONOPTIONS1")
+        {
+            print("working");
+            texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONstay");
+            DisableChoicePanel();
+            texting.EnableTextBox();
+        }
+    }
+
+    public void LeaveClick()
+    {
+        print("leaving");
+        //texting.text = Resources.Load<TextAsset>(@"Dialoguepanel\Bartender\BTleave");
+        for (int i = 0; i < locations.transform.childCount; i++)
+        {
+            var child = locations.transform.GetChild(i).gameObject;
+            if (child != null)
+                child.SetActive(false);
+        }
+        mapPanel.SetActive(true);
+        print(mapPanel.activeSelf ? "Active" : "Inactive");
+        DisableChoicePanel();
     }
 
     public void DialogueClickButton1()
@@ -98,6 +144,14 @@ public class ChoiceManager : MonoBehaviour
             {
                 print("working");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTgala");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONjob");
                 DisableDialoguePanel();
                 texting.EnableTextBox();
                 choosing = false;
@@ -117,6 +171,14 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONgala");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
         }
     }
 
@@ -128,6 +190,14 @@ public class ChoiceManager : MonoBehaviour
             {
                 print("working");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTlateHome");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONvictims");
                 DisableDialoguePanel();
                 texting.EnableTextBox();
                 choosing = false;
@@ -146,6 +216,14 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                print("working");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONmurderer");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
         }
     }
 
@@ -156,6 +234,20 @@ public class ChoiceManager : MonoBehaviour
             if (path == @"Dialogue\Bartender\BTOPTIONS3")
             {
                 return;
+            }
+            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            {
+                if (texting.choicesdict.ContainsKey("ONgala") && texting.choicesdict.ContainsKey("ONjob"))
+                {
+                    texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONwork");
+                    DisableDialoguePanel();
+                    texting.EnableTextBox();
+                    choosing = false;
+                }
+                else
+                {
+                   return;
+                }
             }
         }
     }

@@ -1,3 +1,4 @@
+%ONjob
 @You
 Can you tell me what you do around here?
 @Owner
@@ -24,4 +25,4 @@ The Stage Di-
 Yes of course The Stage Director!
 You should go talk to him!
 I'm much too busy to keep sharing about "my job"
-ONOPTIONS3.txt
+$Dialogue\Owner\ONOPTIONS1

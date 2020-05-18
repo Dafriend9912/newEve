@@ -1,3 +1,4 @@
+%DNboxer-true
 @You
 I'd like to go back to something you mentioned earlier.
 @Main Dancer
@@ -15,6 +16,10 @@ Sure, I guess you'll want to hear about my most recent fling. He's the most inte
 This man started coming around here about a year ago.
 I was instantly drawn to him because he was built like a tank. Easily over 6 foot, and packed with muscle.
 I got to talking with him, and he told me he was a Boxer at a nearby ring.
+^BTpeople-2
+@You
+(Oh I think the bartender mentioned this guy also...)
+@Main Dancer
 He wasn't that interesting at first, kind of quiet and suprisingly kind.
 I thought for sure this man couldn't be a Boxer.
 That was until I saw him fight.
