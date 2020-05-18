@@ -73,6 +73,10 @@ public class ChoiceManager : MonoBehaviour
                     Button5Text.text = "";
                 }
             }
+            else
+            {
+                Button5Text.text = textlines[4];
+            }
 
             choosing = true;
         }
