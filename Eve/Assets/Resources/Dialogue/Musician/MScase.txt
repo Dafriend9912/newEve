@@ -1,0 +1,32 @@
+@You
+You're good friends with The Bartender, no?
+@Musician
+Correct.
+@You
+He's told you what he's heard then?
+@Musician
+He has.
+@You
+Good. I'd like to know your thoughts on the case.
+@Musician
+I'd be lying if I said I didn't have some thoughts on the case, however, I doubt any of it will be helpful to you.
+@You
+Fire away, the more I know the better.
+@Musician
+I think it's likely that both of the upcoming-murderers work in the club.
+It's incredibly dangerous to make a call from inside the club.
+Even when it's late at night, The Bartender is almost always there.
+If at least one of the murderers works here, they must surely know that.
+I suspect that the call was meant to be overheard.
+This would deflect suspicion from one of them.
+@You
+An interesting idea.
+But why go through the trouble of having the call be heard in the first place?
+@Musician
+That's what I've been struggling with too.
+I can't come up with anything for that, but it doesn't sit right with me.
+@You
+I'll keep that idea in mind then. Thank you.
+@Musician
+Of course, I hope it proves helpful.
+$Dialogue\Musician\Options1
