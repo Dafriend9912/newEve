@@ -77,12 +77,19 @@ public class TextManager : MonoBehaviour
         else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
         {
             print("OKAY IT SEES THE %");
-            if (!choicesdict.ContainsKey(textlines[currline].Substring(1)))
+            if (!choicesdict.ContainsKey(textlines[currline].Substring(1).Trim()))
             {
                 print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
                 choicesdict.Add(textlines[currline].Substring(1).Trim(), true);
                 string ret = choicesdict[textlines[currline].Substring(1).Trim()].ToString();
                 print(ret);
+                currline++;
+                nameText.text = textlines[currline].Substring(1);
+                speaker = textlines[currline].Substring(1).ToString();
+                currline++;
+            }
+            else
+            {
                 currline++;
                 nameText.text = textlines[currline].Substring(1);
                 speaker = textlines[currline].Substring(1).ToString();
@@ -154,6 +161,13 @@ public class TextManager : MonoBehaviour
                         print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
                         print(textlines[currline]);
                         choicesdict.Add(textlines[currline].Substring(1).Trim(), true);
+                        currline++;
+                    }
+                    else
+                    {
+                        currline++;
+                        nameText.text = textlines[currline].Substring(1);
+                        speaker = textlines[currline].Substring(1).ToString();
                         currline++;
                     }
                 }
