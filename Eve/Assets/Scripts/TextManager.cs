@@ -195,13 +195,54 @@ public class TextManager : MonoBehaviour
             theText.text = story;
         }
     }
-    IEnumerator PlayText()
+    IEnumerator PlayText2()
     {
         CR = true;
         foreach (char c in story) 
         {
-            theText.text += c;
+            if (c == '*')
+            {
+                
+                theText.text += "<color=yellow>" + c + "</color>";
+            }
+            else
+            {
+                theText.text += c;
+            }
             yield return new WaitForSeconds (0.050f);
+        }
+        CR = false;
+    }
+
+    IEnumerator PlayText()
+    {
+        CR = true;
+        for (int i = 0; i < story.Length; i++ )
+        {
+            char c = story[i];
+            if (c == '{')
+            {
+                while (c != '}')
+                {
+                    i++;
+                    c = story[i];
+                }
+                while (c != '{')
+                {
+                    i++;
+                    theText.text += "<color=green>" + c + "</color>";
+                    c = story[i];
+                    for (int p = 0; p < 100; p++)
+                    {
+                        print(p);
+                    }
+                }
+            }
+            else
+            {
+                theText.text += c;
+            }
+            yield return new WaitForSeconds(0.050f);
         }
         CR = false;
     }
