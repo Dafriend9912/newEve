@@ -1,5 +1,5 @@
 @Bartender
-Ah! you must be The Detective
+Ah! you must be The <color=green>Detective</color>
 @You
 Yep, I'm guessing you're The Bartender
 @Bartender
