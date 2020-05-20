@@ -1,0 +1,23 @@
+@You
+You're probably wondering why I'm bothering to talk to you at all.
+I've heard that you've been coming around the club occasionally.
+@Boxer
+Yeah, what of it?
+@You
+I'm investigating a potential murder.
+Anyone who has ties to the club is currently a potential suspect.
+@Boxer
+Potential murder?
+@You
+Yes, I'll spare you the details, but can you tell me more about why you come around the club?
+@Boxer
+I come around the club for the same reasons as everyone else.
+I'm a man living in this shithole district looking for some break from my daily life.
+@You
+Maybe, but it seems like you've had some confrontations there
+@Boxer
+Yeah, I've had some fights there, but I have fights everywhere I go.
+I've made mistakes in my past, but I'm trying to get over them.
+People like you that keep bringing up my past are what keeps me from getting over it.
+Ask your next question or get out!
+$Dialogue\Boxer\BXOPTIONS1 

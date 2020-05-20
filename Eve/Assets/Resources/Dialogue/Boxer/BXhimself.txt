@@ -1,0 +1,30 @@
+@You
+I won't bullshit you.
+From what I've heard, and what I've seen, you're quite the force.
+Would you consider yourself a dangerous person?
+@Boxer
+Right to the heart of it eh?
+Do you know why I chose to box?
+@You
+Tell me.
+@Boxer
+All throughout childhood I got in fights.
+Looking back on it, they were always over stupid things.
+...
+I'm not inherently a bad person, but I was never able to control my wrath.
+I took up boxing to channel some of that rage into something at least somewhat productive.
+@You
+So you take out your emotions on your opponent?
+@Boxer
+Yes.
+@You
+And this works?
+@Boxer
+Not for the sorry sap that I'm pummeling at the time, but it's done wonders for me.
+I suppose me roughing up one capable boxer every few days is also better for society as a whole huh?
+I still have some costly slip ups, but for the most part, fighting in the ring helps me contain my anger outside of it.
+@You
+(Sounds like he's genuine about why he fights at least...)
+@Boxer
+Listen, I know I've been a danger in the past, but I'm getting better at remaining peaceful.
+$Dialogue\Boxer\BXOPTIONS1
