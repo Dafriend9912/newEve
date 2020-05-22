@@ -9,10 +9,10 @@ I find that the vaguer my questions, the more I'll learn.
 Well let's see.
 I started working here almost 7 years ago.
 It's not a bad job, actually it's pretty good.
-The owner pays me much better than most clubs. I try to return the favor by always being friendly with customers.
-It seems like that works because we have quite a few repeated customers, and are by far one of the most popular clubs in the district.
+<color=#FF0000>The Owner pays me much better than most clubs.<color=white> I try to return the favor by always being friendly with customers.
+It seems like that works because <color=#FF0000>we have quite a few repeated customers,<color=white> and are by far one of the most popular clubs in the district.
 That being said, I think some of the management here is a bit backwards.
-The owner lets the dancers drink for free here!
+<color=#FDFF81>The Owner<color=white> lets the dancers drink for free here!
 @You
 Is that a bad thing?
 @Bartender
@@ -20,7 +20,7 @@ Well for starters, the dancers shouldn't be drinking while their working, it's d
 Also, I make most of my money through tips; if the dancers don't pay, they don't tip.
 It also makes it harder for me to keep up with where all my liquor is going if I don't have a reciept.
 @You
-I see, have you complained to the owner about that?
+I see, have you complained to <color=#FDFF81>The Owner<color=white> about that?
 @Bartender
 Of course! He refuses to change that though, says it's good for reeling in customers.
 In all my years bartending I've never seen an owner act like that.

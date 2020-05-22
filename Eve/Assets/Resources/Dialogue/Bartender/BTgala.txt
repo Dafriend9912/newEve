@@ -1,21 +1,21 @@
 %BTgala
 @You
-You mentioned a Gala earlier, what's that got to do with anything?
+You mentioned a <color=#FF0000>Special Gala<color=white> earlier, what's that got to do with anything?
 @Bartender
-Ah, our annual Crimson Gala.
+Ah, our annual <color=#FF0000>Crimson Gala.<color=white>
 I'm not sure what makes it special to the murderers, but we host it every year.
 It's quite the event, everyone gets dressed up in special outfits and we decorate the club a deep red.
 @You
 You decorate the entire club red?
 @Bartender
-Yep, it sounds strange I know, but the owner says that red is an "alluring" color.
-He might be right about that. The Crimson Gala is always our most popular night of the year.
-We serve special drinks, and everyone who's anyone will be there, we've already started selling tickets and are almost full.
+Yep, it sounds strange I know, but <color=#FDFF81>The Owner<color=white> says that red is an "alluring" color.
+He might be right about that. <color=#FF0000>The Crimson Gala<color=white> is always our most popular night of the year.
+We serve special drinks, and <color=#FF0000>everyone who's anyone will be there<color=white>, we've already started selling tickets and are almost full.
 @You
-(Sounds like this would be the perfect night for a murder...)
+<color=#6EEFFF>(Sounds like this would be the perfect night for a murder...)<color=white>
 If it makes so much money, why not have the club do it all the time.
 @Bartender
-You sure you're a detective? If we hosted a Gala every night, it wouldn't be special.
+You sure you're a detective? If we hosted a <color=#FF0000>Gala<color=white> every night, it wouldn't be special.
 There's no way we'd make as much money.
 @You
 I put clues together to save lives; I'll let my accountant handle the money.
