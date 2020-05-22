@@ -1,25 +1,25 @@
 @You
-You said you overheard the phone call pretty late in the evening, correct?
+You said you overheard the <color=#FF0000>the phone call<color=white> pretty late in the evening, correct?
 @Bartender
-Yes, it must have been close to 4am, almost 2 hours after we close
+Yes, it must have been close to <color=#FF0000>4am<color=white>, almost 2 hours after we close
 @You
 And you said that the reason for picking up the phone was to call your wife. Is this common for you two?
 @Bartender
 No, this almost never happens.
-The club closes at 2am. Since I do most of the cleaning and closing of the night, I usually don't get done until 3am.
+The <color=#FF0000>club closes at 2am<color=white>. Since I do most of the cleaning and closing of the night, <color=#FF0000>I usually don't get done until 3am.</color>
 @You
 So what happened that made you stay later?
 @Bartender
 We had an especially busy day.
 There was a group that came in just before closing and got very drunk.
 They were loud and rude, but their pockets were overflowing with money, so the owner told me to suck it up and serve them.
-They ended up not leaving until around 2:30.
+They ended up <color=#FF0000>not leaving until around 2:30.</color>
 @You
 I see, so that's why you were here late?
 @Bartender
 Yes. My wife usually waits up for me before going to bed, so that's why I called her
 @You
-(Sounds like a good relationship, makes me a bit jealous)
+<color=#6EEFFF>(Sounds like a good relationship, makes me a bit jealous)</color>
 @Bartender
 Is there anything else you would like to know?
 $Dialogue\Bartender\BTOPTIONS1

@@ -209,14 +209,87 @@ public class TextManager : MonoBehaviour
             theText.text = story;
         }
     }
-    IEnumerator PlayText()
+    IEnumerator PlayText2()
     {
         CR = true;
         foreach (char c in story) 
         {
-            theText.text += c;
+            if (c == '*')
+            {
+                
+                theText.text += "<color=yellow>" + c + "</color>";
+            }
+            else
+            {
+                theText.text += c;
+            }
             yield return new WaitForSeconds (0.050f);
         }
         CR = false;
     }
+
+    IEnumerator PlayText()
+    {
+        CR = true;
+        for (int i = 0; i < story.Length; i++ )
+        {
+            string color = "";
+            char c = story[i];
+            if (c == '<')
+            {
+                for (int j = 0; j < 7; j++)
+                {
+                    color += story[i+j+7];
+                }
+                print("Next color is: " + color);
+                if (color == "#6EEFFF") // cyan
+                {
+                    i += 14;
+                    c = story[i];
+                    while (c != '<')
+                    {
+                        i++;
+                        c = story[i];
+                        theText.text += "<color=#6EEFFF>" + c + "</color>";
+                        yield return new WaitForSeconds(0.050f);
+                    }
+                    i += 13;
+                }
+                if (color == "#FDFF81") //light yellow
+                {
+                    i += 14;
+                    c = story[i];
+                    while (c != '<')
+                    {
+                        i++;
+                        c = story[i];
+                        theText.text += "<color=#FDFF81>" + c + "</color>";
+                        yield return new WaitForSeconds(0.050f);
+                    }
+                    i += 13;
+                }
+                if (color == "#FF0000") // red
+                {
+                    i += 14;
+                    c = story[i];
+                    while (c != '<')
+                    {
+                        i++;
+                        c = story[i];
+                        theText.text += "<color=#FF0000>" + c + "</color>";
+                        yield return new WaitForSeconds(0.050f);
+                    }
+                    i += 13;
+                }
+
+            }
+            else
+            {
+                theText.text += c;
+            }
+            yield return new WaitForSeconds(0.050f);
+        }
+        CR = false;
+    }
+
 }

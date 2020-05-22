@@ -1,32 +1,31 @@
 @Bartender
-Ah! you must be The <color=green>Detective</color>
-@You
-Yep, I'm guessing you're The Bartender
+Ah! you must be <color=#FDFF81>The Detective<color=white>
+Yep, I'm guessing you're <color=#FDFF81>The Bartender<color=white>
 @Bartender
-Thanks for coming, I wouldn't have asked for you if this wasn't very important
+Uh-huh. Thanks for coming, I wouldn't have asked for you if this wasn't very important
 @You
 Of course, any murder is serious business, but you've got to tell me more. How do you even know a murder is going to happen?
 @Bartender
 Well... to be completely honest, I don't have any evidence.
 Two nights ago as I was trying to place a call to my wife to tell her I'd be home later than usual.
-When I picked up the phone I found it was already in use.
-I overheard two voices talking.
-They mentioned the Gala that's set to take place in one week.
+When I picked up the phone <color=#FF0000>I found that it was already in use.<color=white>
+I overheard <color=#FF0000>two voices<color=white> talking.
+They mentioned the <color=#FF0000>Gala<color=white> that's set to take place in one week.
 Said it'd be the perfect time for their plan.
-I was confused. At first I didn't know what plan they were talking about, but it is true, we do have a Gala coming up.
-Then they mentioned murder. Something about revenge.
-At this point I realized that one of the people on the phone must be somewhere here in the club with me.
-There's only two other phones here. One in the owners office, and one behind the stage.
+At first I was confused. We do have a <color=#FF0000>Special Gala<color=white> coming up, but I don't think any "events" have been finalized yet.
+Then they mentioned <color=#FF0000>murder.<color=white> <color=#FF0000>Something about revenge.<color=white>
+At this point I realized that one of the people on the phone must be <color=#FF0000>somewhere here in the club<color=white> with me.
+There's only <color=#FF0000>two other phones<color=white> here. One in The Owner's office, and one behind the stage.
 I quietly put the phone back down to go look for them so I could figure out who it was.
 I must have not been as quiet as I thought I was because when I got behind stage, whoever was on the phone had left.
-The phone was hanging off the hook though, so I'm sure they must have been there!
+<color=#FF0000>The phone was hanging off the hook<color=white> though, so I'm sure they must have been there!
 @You
-(Hmm... so there might be two murderers involved in this case...)
+<color=#6EEFFF>(Hmm... so there might be two murderers involved in this case...)</color>
 @Bartender
-I went and talked to the owner about cancelling the Gala, but he said that was insane, and that he wouldn't do it without concrete evidence.
+I went and talked to <color=#FDFF81>The Owner<color=white> about cancelling the Gala, but he said that was insane, and that he wouldn't do it without concrete evidence.
 That's why I hired you.
 I'm sorry I don't know much more than that, but you should ask around.
-The Owner knows the most of what's going on around here.
-The Main Dancer is who you'll want to talk to if you want to know more about people. She's the clubs most popular dancer and she knows it.
-Also if you've got a minute, you could talk to The Musician, he's a good friend of mine.
+<color=#FDFF81>The Owner<color=white> knows the most of what's going on around here.
+<color=#FDFF81>The Main Dancer<color=white> is who you'll want to talk to if you want to know more about people. She's the clubs most popular dancer and she knows it.
+Also if you've got a minute, you could talk to <color=#FDFF81>The Musician<color=white> he's a good friend of mine.
 $Dialogue\Bartender\BTOPTIONS1
