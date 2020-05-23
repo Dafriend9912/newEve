@@ -1,0 +1,25 @@
+@You
+Hello, you must be one of The Musicians here.
+@Musician
+I suppose.
+@You
+You suppose?
+@Musician
+Well there's nothing wrong with your statement.
+However, that's not the entirety of it either.
+@You
+What are you getting at?
+@Musician
+Look at me... I despise people who waste my time, and here I am, wasting yours.
+Forgive me, I'll be more straight forward.
+Yes I'm one of The Musicians here, but I'm really the only musician here.
+@You
+What do you mean by that?
+@Musician
+There are others who play here of course, but to the untrained ear, I'm the only one worthy to be called "A musician".
+Therefore, I prefer to stylize myself as "The Musician".
+Don't get me wrong, I hold the others no ill will, but I'm the most successful here.
+Ah. I've done it again haven't I?
+I'm wasting your time.
+You've no doubt got questions to ask me.
+$Dialogue\Musician\Options1

@@ -44,4 +44,4 @@ Well, it started from a phone call The Bartender heard two nights ago...
 @Main Dancer
 Well he's right that I'm easily the most popular person around here.
 What do you need to know?
-$Dialogue\Dancer\DNOPTIONS1.txt
+$Dialogue\Dancer\DNOPTIONS1

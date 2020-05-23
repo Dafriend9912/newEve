@@ -1,0 +1,23 @@
+@You
+(Did I really have to watch one of his fights before talking to him...?)
+(I hope that other guy is gonna be ok...)
+(This Boxer looks really dangerous...)
+Hello, That was quite the fight.
+@Boxer
+Oh, thank you.
+...
+How did you get back here?
+@You
+(I better come across strong...)
+Does this answer it?
+@Boxer
+Oh you've got a badge.
+You're a detective?
+@You
+I am.
+I'm investigating a potential case.
+I won't say you're a suspect, but I've heard you might be dangerous.
+@Boxer
+Of course you have.
+Well. Get on with your questions then
+$Dialogue\Boxer\BXOPTIONS1

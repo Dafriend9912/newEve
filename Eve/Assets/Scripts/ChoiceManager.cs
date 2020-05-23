@@ -15,6 +15,11 @@ public class ChoiceManager : MonoBehaviour
     public TextMeshProUGUI Button3Text;
     public TextMeshProUGUI Button4Text;
     public TextMeshProUGUI Button5Text;
+    public Button Button1;
+    public Button Button2;
+    public Button Button3;
+    public Button Button4;
+    public Button Button5;
     public GameObject ChoicePanel;
     public TextMeshProUGUI Choice1Text;
     public TextMeshProUGUI Choice2Text;
@@ -49,33 +54,69 @@ public class ChoiceManager : MonoBehaviour
         textlines = (blank.text.Split('\n'));
         Dialoguepanel.SetActive(true);
         Button1Text.text = textlines[0];
-        Button2Text.text = textlines[1];
-        Button3Text.text = textlines[2];
-        Button4Text.text = textlines[3];
-        bool t = true;
-        if (textlines[4].ToCharArray()[0] == '^') //to look up something in the dictionary
+        if (textlines.Length >= 2)
         {
-            print("testing carrot");
-            foreach (KeyValuePair<string, bool> key in texting.choicesdict)
-            {
-                print(key.Key+" + "+ key.Value);
-            }
-            if (path == @"Dialogue\Owner\ONOPTIONS3")
-            {
-                print(textlines[5]);
-                print(texting.choicesdict.ContainsKey("ONgala"));
-                if (texting.choicesdict.ContainsKey("ONgala") && texting.choicesdict.ContainsKey("ONjob"))
-                {
-                    Button5Text.text = textlines[5];
-                }
-                else
-                {
-                    Button5Text.text = "";
-                }
-            }
-
-            choosing = true;
+            Button2Text.text = textlines[1];
+            Button2.interactable = true;
         }
+        else
+        {
+            Button2Text.text = "";
+            Button2.interactable = false;
+        }
+        if (textlines.Length >= 3)
+        {
+            Button3Text.text = textlines[2];
+            Button3.interactable = true;
+        }
+        else
+        {
+            Button3Text.text = "";
+            Button3.interactable = false;
+        }
+        if (textlines.Length >= 4)
+        {
+            Button4Text.text = textlines[3];
+            Button4.interactable = true;
+        }
+        else
+        {
+            Button4Text.text = "";
+            Button4.interactable = false;
+        }
+        bool t = true;
+        if (textlines.Length >= 5)
+        {
+            if (textlines[4].ToCharArray()[0] == '^') //to look up something in the dictionary
+            {
+                if (path == @"Dialogue\Owner\ONOPTIONS3")
+                {
+                    print(textlines[5]);
+                    print(texting.choicesdict.ContainsKey("ONgala"));
+                    if (texting.choicesdict.ContainsKey("ONgala") && texting.choicesdict.ContainsKey("ONjob"))
+                    {
+                        Button5Text.text = textlines[5];
+                        Button5.interactable = true;
+                    }
+                    else
+                    {
+                        Button5Text.text = "";
+                        Button5.interactable = false;
+                    }
+                }
+            }
+            else
+            {
+                Button5Text.text = "";
+                Button5.interactable = false;
+            }
+        }
+        else
+        {
+            Button5Text.text = "";
+            Button5.interactable = false;
+        }
+        choosing = true;
     }
 
     public void EnableChoicePanel(string x)
@@ -148,10 +189,18 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
-            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            else if (path == @"Dialogue\Owner\ONOPTIONS3")
             {
                 print("working");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONjob");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            else if (path == @"Dialogue\Owner\ONOPTIONS4")
+            {
+                print("working???");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONlazy");
                 DisableDialoguePanel();
                 texting.EnableTextBox();
                 choosing = false;
@@ -179,6 +228,14 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
+            if (path == @"Dialogue\Owner\ONOPTIONS4")
+            {
+                print("working?????????");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONmurderer");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
         }
     }
 
@@ -198,6 +255,14 @@ public class ChoiceManager : MonoBehaviour
             {
                 print("working");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONvictims");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            if (path == @"Dialogue\Owner\ONOPTIONS4")
+            {
+                print("working?");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONforget");
                 DisableDialoguePanel();
                 texting.EnableTextBox();
                 choosing = false;

@@ -1,0 +1,27 @@
+@You
+I'd like to go back a bit.
+How did you and The Bartender become friends?
+@Musician
+We were friends before I even started working here.
+He was the one who first mentioned me to The Owner.
+Of course, I accepted the job opportunity.
+@You
+So you two have been good friends for awhile now?
+@Musician
+Yes, and when I started working here, we bonded even more.
+Neither of us care about the Dancers too much.
+I don't like them because they are too flagrant.
+They steal attention away from my craft.
+The music I play deserves a higher recognition than what it recieves here.
+That being said, I am first and foremost a business man.
+I recognize that the Dancers are vital to the survival of the club.
+To remove them would be to upset the entire ecosystem upon which I make my living.
+@You
+(Interesting, I asked about his relation with The Bartender, and he opened up about the Dancers...)
+@Musician
+I did it again.
+I get too caught up in answering, that I sometimes forget what the question is.
+@You
+That's fine, this has been helpful
+(I probably got more information here than I would've had I just asked about the Dancers...)
+$Dialogue\Musician\Options1

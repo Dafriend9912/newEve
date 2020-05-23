@@ -16,4 +16,4 @@ Show me the evidence Mr. "Detective".
 @You
 For starters, you didn't even know I was here investigating the club.
 You also say that the Gala is in less than a week, but it sounds like you haven't even started with preparations.
-$Dialogue\Owner\ONOPTIONS1
+#Dialogue\Owner\ONOPTIONS4
