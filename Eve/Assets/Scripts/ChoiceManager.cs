@@ -82,7 +82,7 @@ public class ChoiceManager : MonoBehaviour
                 {
                     print(textlines[5]);
                     print(texting.choicesdict.ContainsKey("Call2"));
-                    if (texting.choicesdict.ContainsKey("Call2"))
+                    if (texting.choicesdict.ContainsKey("DNstaff"))
                     {
                         Button4Text.text = textlines[4];
                         Button4.interactable = true;
@@ -126,26 +126,10 @@ public class ChoiceManager : MonoBehaviour
                     }
                 }
             }
-            if (textlines[5].ToCharArray()[0] == '^') //to look up something in the dictionary
+            if (path == @"Dialogue\Dancer\DNOPTIONS3")
             {
-                if (path == @"Dialogue\Dancer\DNOPTIONS3")
-                {
-                    if (texting.choicesdict.ContainsKey("DNstaff"))
-                    {
-                        Button5Text.text = textlines[6];
-                        Button5.interactable = true;
-                    }
-                    else
-                    {
-                        Button5Text.text = "";
-                        Button5.interactable = false;
-                    }
-                }
-            }
-            else
-            {
-                Button5Text.text = "";
                 Button5.interactable = false;
+                Button5Text.text = "";
             }
         }
         else
@@ -375,7 +359,7 @@ public class ChoiceManager : MonoBehaviour
             }
             else if (path == @"Dialogue\Dancer\DNOPTIONS3")
             {
-                if (texting.choicesdict.ContainsKey("Call2"))
+                if (texting.choicesdict.ContainsKey("DNstaff"))
                 {
                     texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNpatrons");
                     DisableDialoguePanel();
@@ -411,20 +395,6 @@ public class ChoiceManager : MonoBehaviour
                 else
                 {
                    return;
-                }
-            }
-            else if (path == @"Dialogue\Dancer\DNOPTIONS3")
-            {
-                if (texting.choicesdict.ContainsKey("DNstaff"))
-                {
-                    texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNpatrons");
-                    DisableDialoguePanel();
-                    texting.EnableTextBox();
-                    choosing = false;
-                }
-                else
-                {
-                    return;
                 }
             }
         }
