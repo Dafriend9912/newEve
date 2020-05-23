@@ -1,0 +1,28 @@
+@You
+Can you tell me a bit more about yourself?
+@Musician
+Of course, but I'll have to keep it brief.
+I've got a song I need to finish, and practice to do.
+@You
+A song?
+@Musician
+Yes.
+You've no doubt heard about our Annual Crimson Gala.
+I'm in the process of writing several pieces specifically for the night.
+@You
+Do you always do this?
+@Musician
+The owner pays me handsomely for my work. Does that answer your question?
+@You
+You do it for the money?
+@Musician
+Don't get me wrong, I truly do have a love for my craft, but money is what drives the world is it not?
+That's why I've chosen my line of work.
+If I wish to make more money, which I do, I must first make better music.
+If I wish to make better music, I must first better myself.
+I've married my passion and my desire for riches in such a beautifully sustaining way!
+@You
+Sounds like a productive drive.
+@Musician
+Money is truly the greatest motivator.
+$Dialogue\Musician\Options1

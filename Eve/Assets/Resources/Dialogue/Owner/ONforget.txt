@@ -1,4 +1,4 @@
 @You
 (Hmm... I guess I don't really need to ask about this right now...)
 Nevermind, let's talk about something else.
-#ONOPTIONS3.txt
+$Dialogue\Owner\ONOPTIONS1

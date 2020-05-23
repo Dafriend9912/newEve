@@ -1,3 +1,4 @@
+%DNstaff
 @You
 Can you tell me a bit more about the people who work here?
 @Main Dancer
@@ -15,4 +16,4 @@ I don't ever mess up, I'm much too good for that, but I've heard from some of th
 Speaking of other dancers, you should go talk to my Backup Dancer.
 She's definetely not as good as I am, but she sometimes fills in for me on nights I'm not here.
 That's about it for the staff here.
-$Dialogue\Dancer\DNOptions5.txt
+$Dialogue\Dancer\DNOPTIONS1

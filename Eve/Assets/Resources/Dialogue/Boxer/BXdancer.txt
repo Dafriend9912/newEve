@@ -1,0 +1,33 @@
+@You
+I'd like to ask about one of your past relationships
+@Boxer
+...
+@You
+(Guess that wasn't what he wanted to hear)
+@Boxer
+You'll be wanting to talk about The Dancer then.
+@You
+Yes.
+I spoke to her, and she mentioned that you and her had some issues in the past.
+@Boxer
+Listen, I don't want to talk about that Bitch, but leave it at what she said, those issues are in the past.
+Being with her was the worst decision I've ever made.
+She was arrogant and manipulative.
+She knew about my anger issue, and she knew exactly what buttons to push.
+I think she wanted to test me, to see just how far I would go when enraged.
+I knew I wouldn't forgive myself if I ever laid a hand on her, so I didn't.
+Still, all those emotions had to go somewhere.
+I was unchained, furious almost all the time.
+I could barely go an hour without breaking something, or someone.
+She finally dumped me.
+@You
+Did anything happen after?
+@Boxer
+Sure I made some bad choices, following the break up, but that was probably the best ending for us.
+I learned a lot about myself from that relationship.
+Since then I've been working on making myself a better person.
+You can even ask my psychiatrist, I've way more docile now than I was before.
+@You
+(Sounds like he may be a bit better than before... And I can defiently see what he meant about The Dancer...)
+I'll take your word for it.
+$Dialogue\Boxer\BXOPTIONS1

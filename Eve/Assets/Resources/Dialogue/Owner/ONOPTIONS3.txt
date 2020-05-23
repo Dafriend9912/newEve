@@ -3,4 +3,4 @@ Ask about the Gala
 Ask about potential victims.
 Ask about potential murderers.
 ^ONjob&&ONgala-1
-Ask about his "work" = requires asking about job && Gala first
+Ask about his "work"

@@ -1,0 +1,40 @@
+@You
+You probably didn't see me in the crowd, but I watched your fight.
+@Boxer
+...
+Ok.
+@You
+I don't think I've ever seen someone fight with that much intensity.
+@Boxer
+You must not frequent the ring then.
+@You
+That's true, but your style seems like it's a cut above the rest.
+@Boxer
+...
+Thats true...
+@You
+(Was that pride in his eyes I just saw...?)
+@You
+Ok. I'll say it.
+You seem vicious in the ring.
+@Boxer
+I am.
+I haven't lost a fight in years.
+I'm actually running out of people to fight.
+I leave 'em all in pretty bad shape.
+@You
+What drives you to fight like that?
+@Boxer
+...
+Anger I guess.
+I'm not proud of it.
+Honestly, It's not a good quality of mine, I know that.
+But I'm able to channel that rage I feel right through my fists, into my oppenents jaw.
+I haven't lost a fight in years because the more beating I take, the more I can dish out.
+@You
+(He defiently seems dangerous, but he also seems almost remorseful...)
+@Boxer
+You didn't come all the way here just to ask about my last fight did you?
+@You
+No I didn't
+$Dialogue\Boxer\BXOPTIONS1

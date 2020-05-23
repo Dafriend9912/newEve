@@ -21,4 +21,4 @@ I know I know. I just can't make myself do any of it.
 Please don't tell anyone.
 @You
 (Maybe I should go pay the Stage Director a visit...)
-ONOPTIONS3.txt
+$Dialogue\Owner\ONOPTIONS1

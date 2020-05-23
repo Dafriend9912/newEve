@@ -1,3 +1,4 @@
+%Call2
 @You
 You sounded pretty heated on the call, don't try to tell me you don't know them.
 @Main Dancer
@@ -29,4 +30,4 @@ Pretty much, I didn't even recognize his voice.
 (Hmm... Not much to go off of there...)
 @Main Dancer
 Anything else you need from me?
-$Dialogue\Dancer\DNOPTIONS1.txt
+$Dialogue\Dancer\DNOPTIONS1

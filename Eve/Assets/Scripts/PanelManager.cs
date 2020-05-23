@@ -37,6 +37,7 @@ public class PanelManager : MonoBehaviour
     {
         DancerPanel.SetActive(true);
         currentPanel.SetActive(false);
+        Manager.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNfirstMeeting");
         Manager.EnableTextBox();
         Other.sprite = Resources.Load<Sprite>(@"Characters\IxD main dancer");
     }

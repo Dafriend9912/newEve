@@ -11,4 +11,4 @@ That's not a good enough answer for me
 @Main Dancer
 Hmph.
 I don't know who it was.
-$Dialogue\Dancer\DNOPTIONS4.txt
+#Dialogue\Dancer\DNOPTIONS4

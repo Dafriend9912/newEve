@@ -1,0 +1,27 @@
+@You
+How did you know I wanted to question you.
+I haven't even introduced myself yet.
+@Musician
+I guess you could say I'm just perceptive.
+No, that's not entirely true.
+I'm good friends with the Bartender, the other day he mentioned hiring a detective.
+And you, you're new here.
+@You
+So it was just a guess?
+@Musician
+I suppose you could call it that, but in Music, there is no guessing.
+Chords follow a natural progression.
+Each note is carefully selected to bring the song to life.
+Much akin to the facts in your case, there are no "guesses" or "accidents".
+A professional such as you or I must follow those rules set out before us, else we make mistakes.
+@You
+(I can't decide if he's arrogant, or smart...)
+@Musician
+Before we go further, I must clarify something.
+@You
+Yes?
+@Musician
+You must be wondering if I actually know what I'm talking about, or if I'm just a pompous asshole.
+Only you can make that decision for yourself, but I will say that I have big plans for my future.
+Maybe I'm not the largest name in the industry as of now, but I know how to get there.
+$Dialogue\Musician\Options1
