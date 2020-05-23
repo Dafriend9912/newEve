@@ -30,7 +30,7 @@ public class PanelManager : MonoBehaviour
         currentPanel.SetActive(false);
         Manager.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONfirstMeeting");
         Manager.EnableTextBox();
-        Other = Resources.Load<Image>(@"Character\IxD bartender silhouette");
+        Other = Resources.Load<Image>(@"Character\IxD bartender V2");
 
     }
     public void OpenDancerPanel()
@@ -39,7 +39,7 @@ public class PanelManager : MonoBehaviour
         currentPanel.SetActive(false);
         Manager.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNfirstMeeting");
         Manager.EnableTextBox();
-        Other.sprite = Resources.Load<Sprite>(@"Characters\IxD main dancer");
+        Other.sprite = Resources.Load<Sprite>(@"Characters\IxD dancer V2");
     }
     public void OpenMusicianPanel()
     {
@@ -54,6 +54,6 @@ public class PanelManager : MonoBehaviour
         print(BoxerPanel.activeSelf ? "Boxer Panel should be Active" : "Inactive");
         currentPanel.SetActive(false);
         Manager.EnableTextBox();
-        Other.sprite = Resources.Load<Sprite>(@"Characters\IxD boxer silhouette");
+        Other.sprite = Resources.Load<Sprite>(@"Characters\IxD boxer V2");
     }
 }

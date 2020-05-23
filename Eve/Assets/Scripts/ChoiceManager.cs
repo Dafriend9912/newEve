@@ -104,14 +104,12 @@ public class ChoiceManager : MonoBehaviour
         }
         else
         {
-            Button5Text.text = "";
-            Button5.interactable = false;
+            Button4Text.text = "";
+            Button4.interactable = false;
         }
         bool t = true;
         if (textlines.Length >= 5)
         {
-            if (textlines[4].ToCharArray()[0] == '^') //to look up something in the dictionary
-            {
                 if (path == @"Dialogue\Owner\ONOPTIONS3")
                 {
                     print(textlines[5]);
@@ -127,12 +125,21 @@ public class ChoiceManager : MonoBehaviour
                         Button5.interactable = false;
                     }
                 }
-            }
-            if (path == @"Dialogue\Dancer\DNOPTIONS3")
-            {
-                Button5.interactable = false;
-                Button5Text.text = "";
-            }
+                else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+                {
+                    print(textlines[5]);
+                    print(texting.choicesdict.ContainsKey("ONgala"));
+                    if (texting.choicesdict.ContainsKey("Call2"))
+                    {
+                        Button5Text.text = textlines[6];
+                        Button5.interactable = true;
+                    }
+                    else
+                    {
+                        Button5Text.text = "";
+                        Button5.interactable = false;
+                    }
+                }
         }
         else
         {
