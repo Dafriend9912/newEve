@@ -1,33 +1,33 @@
 @You
-What can you tell me about this Gala coming up?
-@Main Dancer
-Oh the Gala!
-I love the Gala!
+What can you tell me about this <color=#FF0000>Gala<color=white> coming up?
+@Dancer
+Oh <color=#FF0000>the Gala!<color=white>
+I love <color=#FF0000>the Gala!<color=white>
 @You
-(Sounds like I asked the right question...)
-@Main Dancer
-During the Gala I get to treat everyone like the shit they are!
+<color=#6EEFFF>(Sounds like I asked the right question...)<color=white>
+@Dancer
+During the <color=#FF0000>Gala I get to treat everyone like the shit they are!<color=white>
 @You
-(Huh...?)
-@Main Dancer
-The Owner makes me treat the customers with respect usually.
-I'm allowed to laugh at their pathetic lives when they try to talk to me in person, but when I'm working, I have to pretend that the short smelly man in front of me is a actually a tall muscular greek god.
-It's just business. 
-but the Gala is completely different.
-It's really the only night where I can really let my feelings show.
+<color=#6EEFFF>(Huh...?)<color=white>
+@Dancer
+<color=#FDFF81>The Owner<color=white> makes me treat the customers with respect usually.
+I'm allowed to laugh at their <color=#FF0000>pathetic lives<color=white> when they try to talk to me in person, but when I'm working, I have to pretend that the short smelly man in front of me is a actually a tall muscular greek god.
+<color=#FF0000>It's just business.<color=white>
+but <color=#FF0000>the Gala<color=white> is completely different.
+<color=#FF0000>It's really the only night where I can really let my feelings show.<color=white>
 @You
-(This is not what I was expecting...)
-Why is the Gala different?
-@Main Dancer
+<color=#6EEFFF>(This is not what I was expecting...)<color=white>
+Why is <color=#FF0000>the Gala<color=white> different?
+@Dancer
 Well, we decorate the club, and have extra special drinks, but more importantly, we have unique costumes that we wear.
-This means I get to create a unique personality for that night.
-What a better fake personality than revealing my true feelings?
+This means <color=#FF0000>I get to create a unique personality for that night.<color=white>
+<color=#FF0000>What a better fake personality than revealing my true feelings?<color=white>
 @You
 And that works?
-@Main Dancer
+@Dancer
 Oh yeah!
 Everyone who hasn't really met me assumes it's just an act.
-Some of the perverts here even get off to that kind of thing you know.
+<color=#FF0000>Some of the perverts here even get off to that kind of thing<color=white> you know.
 @You
-(Guess I know her thoughts on the event then...)
+<color=#6EEFFF>(Guess I know her thoughts on the event then...)<color=white>
 #Dialogue\Dancer\DNOPTIONS3

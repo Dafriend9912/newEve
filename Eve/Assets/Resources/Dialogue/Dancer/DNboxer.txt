@@ -1,70 +1,70 @@
 %DNboxer-true
 @You
 I'd like to go back to something you mentioned earlier.
-@Main Dancer
+@Dancer
 Ok.
 @You
 It was when you were talking about the men here.
-You said that you "almost never" accept their offers.
+You said that you <color=#FF0000>"almost never"<color=white> accept their offers.
 Are there any men that you have given a chance?
-@Main Dancer
+@Dancer
 Yeah, there have been a few almost worthy men.
 @You
 Can you tell me about them?
-@Main Dancer
+@Dancer
 Sure, I guess you'll want to hear about my most recent fling. He's the most interesting anyways.
 This man started coming around here about a year ago.
-I was instantly drawn to him because he was built like a tank. Easily over 6 foot, and packed with muscle.
-I got to talking with him, and he told me he was a Boxer at a nearby ring.
+I was instantly drawn to him because <color=#FF0000>he was built like a tank. Easily over 6 foot, and packed with muscle.<color=white>
+I got to talking with him, and he told me he was <color=#FDFF81>A Boxer<color=white> at a nearby ring.
 ^BTpeople-2
 @You
-(Oh I think the bartender mentioned this guy also...)
-@Main Dancer
+<color=#6EEFFF>(Oh I think the bartender mentioned this guy also...)<color=white>
+@Dancer
 He wasn't that interesting at first, kind of quiet and suprisingly kind.
 I thought for sure this man couldn't be a Boxer.
-That was until I saw him fight.
+<color=#FF0000>That was until I saw him fight.<color=white>
 @You
 You went to some of his matches?
-@Main Dancer
-Yes I did, but I first saw him fight here in the club.
+@Dancer
+Yes I did, but <color=#FF0000>I first saw him fight here in the club.<color=white>
 One of the waitresses spilled his drink on him as she walked past.
-His eyes lit up with what I could only describe as pure wrath.
+His eyes lit up with what I could only describe as <color=#FF0000>pure wrath.<color=white>
 @You
-(This doesn't sounds like it ends too happily...)
-@Main Dancer
+<color=#6EEFFF>(This doesn't sounds like it ends too happily...)<color=white>
+@Dancer
 He sprung up with a quickness only years in the ring would bring.
 Within seconds he was on top of the waitress, beating the shit out of her.
-Another patron tried to pull him off, but The Boxer was too consumed with anger.
-He spun around and started beating the shit out of him too.
-I'm sure the other man would have died, but The Bartender pulled out the gun he keeps behind the counter.
-That slowed The Boxer down real quick.
+Another patron tried to pull him off, but <color=#FDFF81>The Boxer<color=white> was too consumed with anger.
+<color=#FF0000>He spun around and started beating the shit out of him too.<color=white>
+I'm sure the other man would have died, but <color=#FDFF81>The Bartender <color=#FF0000>pulled out the gun he keeps behind the counter.<color=white>
+That slowed <color=#FDFF81>The Boxer<color=white> down real quick.
 It was awful... But at the same time, It was the most emotion I've ever seen from someone here...
-Honestly, it made me fall for him even harder...
+<color=#FF0000>Honestly, it made me fall for him even harder...<color=white>
 @You
 What happened to him?
-@Main Dancer
-Well, he got kicked out the club, but I was so infatuated by him at this point, I begged The Owner to let him back in.
-He eventually caved to my wishes, and The Boxer returned to his kind self.
+@Dancer
+Well, he got kicked out the club, but <color=#FF0000>I was so infatuated by him<color=white> at this point, I begged <color=#FDFF81>The Owner to let him back in.
+He eventually caved to my wishes, and <color=#FDFF81>The Boxer<color=white> returned to his kind self.
 He thanked me for allowing him back into the club, and we got to talking.
-We ended up dating for a few months...
+<color=#FF0000>We ended up dating for a few months...<color=white>
 @You
 Only a few months?
-@Main Dancer
-A man with a streak of red hot rage would be better left alone.
-His fists never met me. I was careful enough to never make a mistake around him.
-But Everywhere we went, he'd leave a trail of broken bones of those that had "wronged" him.
-I decided to play it safe, and leave him before he could do the same to me.
+@Dancer
+A man with a <color=#FF0000>streak of red hot rage<color=white> would be better left alone.
+<color=#FF0000>His fists never met me.<color=white> I was careful enough to never make a mistake around him.
+But Everywhere we went, <color=#FF0000>he'd leave a trail of broken bones of those that had "wronged" him.<color=white>
+I decided to play it safe, and <color=#FF0000>leave him before he could do the same to me.<color=white>
 @You
 What's he up to now?
-@Main Dancer
+@Dancer
 Not too sure, we don't talk anymore.
-He stopped coming around the club.
+<color=#FF0000>He stopped coming around the club.<color=white>
 He probably still boxes at the nearby ring.
 @You
-(If he's as dangerous as she says he is, I'll probably have to talk to him...)
-@Main Dancer
+<color=#6EEFFF>(If he's as dangerous as she says he is, I'll probably have to talk to him...)<color=white>
+@Dancer
 If you're thinking of talking to him, he shouldn't be hard to find.
-But I'd avoid him if you value your health.
+<color=#FF0000>But I'd avoid him if you value your health.<color=white>
 @You
 Unfortunately that's not a privilege I can afford right now.
 #Dialogue\Dancer\DNOPTIONS3
