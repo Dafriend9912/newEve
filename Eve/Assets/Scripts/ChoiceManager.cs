@@ -406,6 +406,20 @@ public class ChoiceManager : MonoBehaviour
                    return;
                 }
             }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+            {
+                if (texting.choicesdict.ContainsKey("Call2"))
+                {
+                    texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer/DNboxer");
+                    DisableDialoguePanel();
+                    texting.EnableTextBox();
+                    choosing = false;
+                }
+                else
+                {
+                    return;
+                }
+            }
         }
     }
 }
