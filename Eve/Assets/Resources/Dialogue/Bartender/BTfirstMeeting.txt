@@ -1,5 +1,6 @@
 @Bartender
 Ah! you must be <color=#FDFF81>The Detective<color=white>
+@You
 Yep, I'm guessing you're <color=#FDFF81>The Bartender<color=white>
 @Bartender
 Uh-huh. Thanks for coming, I wouldn't have asked for you if this wasn't very important
