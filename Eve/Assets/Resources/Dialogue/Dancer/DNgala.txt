@@ -30,4 +30,4 @@ Everyone who hasn't really met me assumes it's just an act.
 Some of the perverts here even get off to that kind of thing you know.
 @You
 (Guess I know her thoughts on the event then...)
-$Dialogue\Dancer\DNOPTIONS2.txt
+#Dialogue\Dancer\DNOPTIONS3

@@ -13,4 +13,4 @@ I think he must be a gambler or something, because he always spends a decent amo
 We've talked once, but he doesn't spend much money on me. I wonder why.
 @You
 (I wouldn't be spending money on you either once I heard you talk...)
-$Dialogue\Dancer\DNOPTIONS2.txt
+#Dialogue\Dancer\DNOPTIONS3
