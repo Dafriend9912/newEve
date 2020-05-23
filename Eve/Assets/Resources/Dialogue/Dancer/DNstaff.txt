@@ -1,7 +1,7 @@
 %DNstaff
 @You
 Can you tell me a bit more about the people who work here?
-@Main Dancer
+@Dancer
 Sure.
 You've already met the Bartender, so I won't talk to much about him.
 He doesn't seem to like me. Probably because I'm so popular here.
@@ -9,7 +9,7 @@ The Owner pays really well, but beyond that he seems to always be busy.
 I can't help but think that if he really is as busy as he says he is, this place wouldn't be such a dump.
 @You
 (It looks like this club is prety good shape...)
-@Main Dancer
+@Dancer
 I'd recommend staying away from the Stage Director, I have to talk with him almost everyday as he controls most of what we do, but he's evil.
 I don't just mean he's rude, he's got a mean streak in him.
 I don't ever mess up, I'm much too good for that, but I've heard from some of the other dancers that you don't want to make any mistakes around him.

@@ -1,6 +1,6 @@
 @You
 Can you tell me about any of the patrons here
-@Main Dancer
+@Dancer
 Sure, although there aren't too many.
 There's this one short man who comes in pretty frequently.
 He always asks for either me, or my backup dancer
@@ -8,6 +8,7 @@ He pays really well, so I try to treat him nicely, but he's really not my type.
 He's got way too much confidence for a man of his stature.
 @You
 (Sounds like this dancer has some real disdain for some of these customers...)
+@Dancer
 There's also another man who comes in every now and then.
 I think he must be a gambler or something, because he always spends a decent amount of money, but manages to seem guarded and cunning with his money.
 We've talked once, but he doesn't spend much money on me. I wonder why.

@@ -1,15 +1,15 @@
 @You
 What can you tell me about this Gala coming up?
-@Main Dancer
+@Dancer
 Oh the Gala!
 I love the Gala!
 @You
 (Sounds like I asked the right question...)
-@Main Dancer
+@Dancer
 During the Gala I get to treat everyone like the shit they are!
 @You
 (Huh...?)
-@Main Dancer
+@Dancer
 The Owner makes me treat the customers with respect usually.
 I'm allowed to laugh at their pathetic lives when they try to talk to me in person, but when I'm working, I have to pretend that the short smelly man in front of me is a actually a tall muscular greek god.
 It's just business. 
@@ -18,13 +18,13 @@ It's really the only night where I can really let my feelings show.
 @You
 (This is not what I was expecting...)
 Why is the Gala different?
-@Main Dancer
+@Dancer
 Well, we decorate the club, and have extra special drinks, but more importantly, we have unique costumes that we wear.
 This means I get to create a unique personality for that night.
 What a better fake personality than revealing my true feelings?
 @You
 And that works?
-@Main Dancer
+@Dancer
 Oh yeah!
 Everyone who hasn't really met me assumes it's just an act.
 Some of the perverts here even get off to that kind of thing you know.
