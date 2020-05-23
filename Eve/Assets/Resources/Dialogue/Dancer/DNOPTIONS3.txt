@@ -2,6 +2,4 @@ Ask about the phone call
 Ask about the Gala
 Ask about the staff
 ^
-Ask about other callers
-^
 Ask about patrons
