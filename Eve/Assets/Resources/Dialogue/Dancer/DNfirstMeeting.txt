@@ -43,5 +43,4 @@ Well, it started from a phone call The Bartender heard two nights ago...
 ...And then The Bartender said I should come talk to you, so here I am.
 @Main Dancer
 Well he's right that I'm easily the most popular person around here.
-What do you need to know?
 $Dialogue\Dancer\DNOPTIONS1

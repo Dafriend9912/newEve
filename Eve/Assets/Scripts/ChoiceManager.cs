@@ -76,13 +76,34 @@ public class ChoiceManager : MonoBehaviour
         }
         if (textlines.Length >= 4)
         {
-            Button4Text.text = textlines[3];
-            Button4.interactable = true;
+            if (textlines[3].ToCharArray()[0] == '^') //to look up something in the dictionary
+            {
+                if (path == @"Dialogue\Dancer\DNOPTIONS3")
+                {
+                    print(textlines[5]);
+                    print(texting.choicesdict.ContainsKey("Call2"));
+                    if (texting.choicesdict.ContainsKey("Call2"))
+                    {
+                        Button4Text.text = textlines[4];
+                        Button4.interactable = true;
+                    }
+                    else
+                    {
+                        Button4Text.text = "";
+                        Button4.interactable = false;
+                    }
+                }
+            }
+            else
+            {
+                Button4Text.text = "";
+                Button4.interactable = false;
+            }
         }
         else
         {
-            Button4Text.text = "";
-            Button4.interactable = false;
+            Button5Text.text = "";
+            Button5.interactable = false;
         }
         bool t = true;
         if (textlines.Length >= 5)
@@ -96,6 +117,22 @@ public class ChoiceManager : MonoBehaviour
                     if (texting.choicesdict.ContainsKey("ONgala") && texting.choicesdict.ContainsKey("ONjob"))
                     {
                         Button5Text.text = textlines[5];
+                        Button5.interactable = true;
+                    }
+                    else
+                    {
+                        Button5Text.text = "";
+                        Button5.interactable = false;
+                    }
+                }
+            }
+            if (textlines[5].ToCharArray()[0] == '^') //to look up something in the dictionary
+            {
+                if (path == @"Dialogue\Dancer\DNOPTIONS3")
+                {
+                    if (texting.choicesdict.ContainsKey("DNstaff"))
+                    {
+                        Button5Text.text = textlines[6];
                         Button5.interactable = true;
                     }
                     else
@@ -158,6 +195,13 @@ public class ChoiceManager : MonoBehaviour
             DisableChoicePanel();
             texting.EnableTextBox();
         }
+        if (path == @"Dialogue\Dancer\DNOPTIONS1")
+        {
+            print("working");
+            texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNstay");
+            DisableChoicePanel();
+            texting.EnableTextBox();
+        }
     }
 
     public void LeaveClick()
@@ -205,6 +249,22 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+            {
+                print("working???");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNphoneCall");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS4")
+            {
+                print("working???");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNphoneCall2");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
         }
     }
 
@@ -220,7 +280,7 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
-            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            else if (path == @"Dialogue\Owner\ONOPTIONS3")
             {
                 print("working");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONgala");
@@ -228,10 +288,26 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
-            if (path == @"Dialogue\Owner\ONOPTIONS4")
+            else if (path == @"Dialogue\Owner\ONOPTIONS4")
             {
                 print("working?????????");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONmurderer");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+            {
+                print("working???");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNgala");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS4")
+            {
+                print("working???");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNforget");
                 DisableDialoguePanel();
                 texting.EnableTextBox();
                 choosing = false;
@@ -251,7 +327,7 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
-            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            else if (path == @"Dialogue\Owner\ONOPTIONS3")
             {
                 print("working");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONvictims");
@@ -259,10 +335,18 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
-            if (path == @"Dialogue\Owner\ONOPTIONS4")
+            else if (path == @"Dialogue\Owner\ONOPTIONS4")
             {
                 print("working?");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONforget");
+                DisableDialoguePanel();
+                texting.EnableTextBox();
+                choosing = false;
+            }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+            {
+                print("working???");
+                texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNstaff");
                 DisableDialoguePanel();
                 texting.EnableTextBox();
                 choosing = false;
@@ -281,7 +365,7 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
-            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            else if (path == @"Dialogue\Owner\ONOPTIONS3")
             {
                 print("working");
                 texting.text = Resources.Load<TextAsset>(@"Dialogue\Owner\ONmurderer");
@@ -289,6 +373,21 @@ public class ChoiceManager : MonoBehaviour
                 texting.EnableTextBox();
                 choosing = false;
             }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+            {
+                if (texting.choicesdict.ContainsKey("Call2"))
+                {
+                    texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNpatrons");
+                    DisableDialoguePanel();
+                    texting.EnableTextBox();
+                    choosing = false;
+                }
+                else
+                {
+                    return;
+                }
+            }
+
         }
     }
 
@@ -300,7 +399,7 @@ public class ChoiceManager : MonoBehaviour
             {
                 return;
             }
-            if (path == @"Dialogue\Owner\ONOPTIONS3")
+            else if (path == @"Dialogue\Owner\ONOPTIONS3")
             {
                 if (texting.choicesdict.ContainsKey("ONgala") && texting.choicesdict.ContainsKey("ONjob"))
                 {
@@ -312,6 +411,20 @@ public class ChoiceManager : MonoBehaviour
                 else
                 {
                    return;
+                }
+            }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+            {
+                if (texting.choicesdict.ContainsKey("DNstaff"))
+                {
+                    texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNpatrons");
+                    DisableDialoguePanel();
+                    texting.EnableTextBox();
+                    choosing = false;
+                }
+                else
+                {
+                    return;
                 }
             }
         }

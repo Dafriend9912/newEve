@@ -67,4 +67,4 @@ If you're thinking of talking to him, he shouldn't be hard to find.
 But I'd avoid him if you value your health.
 @You
 Unfortunately that's not a privilege I can afford right now.
-$Dialogue\Dancer\DNOPTIONS1.txt
+#Dialogue\Dancer\DNOPTIONS3

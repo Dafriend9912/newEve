@@ -2,4 +2,4 @@
 (Hmm... She's keeping something from me...)
 (Maybe it doesn't really matter...)
 Ok fine, let's talk about something else
-$Dialogue\Dancer\DNOPTIONS2.txt
+#Dialogue\Dancer\DNOPTIONS3
