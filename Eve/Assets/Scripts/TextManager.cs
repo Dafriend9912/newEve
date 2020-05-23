@@ -242,7 +242,7 @@ public class TextManager : MonoBehaviour
                     color += story[i+j+7];
                 }
                 print("Next color is: " + color);
-                if (color == "#6EEFFF") // cyan
+                if (color == "#6EEFFF") // cyan - inner monologue
                 {
                     i += 14;
                     c = story[i];
@@ -255,7 +255,7 @@ public class TextManager : MonoBehaviour
                     }
                     i += 13;
                 }
-                if (color == "#FDFF81") //light yellow
+                if (color == "#FDFF81") //light yellow - people
                 {
                     i += 14;
                     c = story[i];
@@ -268,7 +268,7 @@ public class TextManager : MonoBehaviour
                     }
                     i += 13;
                 }
-                if (color == "#FF0000") // red
+                if (color == "#FF0000") // red - important details
                 {
                     i += 14;
                     c = story[i];
