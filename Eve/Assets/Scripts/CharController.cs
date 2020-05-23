@@ -17,7 +17,7 @@ public class CharController : MonoBehaviour
         {
             print("working");
             var color1 = Other.color;
-            color1.a = .75f;
+            color1.a = .4f;
             Other.color = color1;
             var color2 = Player.color;
             color2.a = 1f;
@@ -26,7 +26,7 @@ public class CharController : MonoBehaviour
         else
         {
             var color1 = Player.color;
-            color1.a = .75f;
+            color1.a = .4f;
             Player.color = color1;
             var color2 = Other.color;
             color2.a = 1f;

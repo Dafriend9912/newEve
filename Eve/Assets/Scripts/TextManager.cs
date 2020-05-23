@@ -251,7 +251,7 @@ public class TextManager : MonoBehaviour
                         i++;
                         c = story[i];
                         theText.text += "<color=#6EEFFF>" + c + "</color>";
-                        yield return new WaitForSeconds(0.050f);
+                        yield return new WaitForSeconds(0.060f);
                     }
                     i += 13;
                 }
@@ -264,7 +264,7 @@ public class TextManager : MonoBehaviour
                         i++;
                         c = story[i];
                         theText.text += "<color=#FDFF81>" + c + "</color>";
-                        yield return new WaitForSeconds(0.050f);
+                        yield return new WaitForSeconds(0.060f);
                     }
                     i += 13;
                 }
@@ -277,7 +277,7 @@ public class TextManager : MonoBehaviour
                         i++;
                         c = story[i];
                         theText.text += "<color=#FF0000>" + c + "</color>";
-                        yield return new WaitForSeconds(0.050f);
+                        yield return new WaitForSeconds(0.060f);
                     }
                     i += 13;
                 }
@@ -287,7 +287,7 @@ public class TextManager : MonoBehaviour
             {
                 theText.text += c;
             }
-            yield return new WaitForSeconds(0.050f);
+            yield return new WaitForSeconds(0.040f);
         }
         CR = false;
     }

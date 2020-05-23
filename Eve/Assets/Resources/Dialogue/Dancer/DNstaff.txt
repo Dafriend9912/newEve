@@ -1,19 +1,19 @@
 %DNstaff
 @You
 Can you tell me a bit more about the people who work here?
-@Main Dancer
+@Dancer
 Sure.
-You've already met the Bartender, so I won't talk to much about him.
-He doesn't seem to like me. Probably because I'm so popular here.
-The Owner pays really well, but beyond that he seems to always be busy.
-I can't help but think that if he really is as busy as he says he is, this place wouldn't be such a dump.
+You've already met <color=#FDFF81>The Bartender,<color=white> so I won't talk to much about him.
+<color=#FF0000>He doesn't seem to like me.<color=white> Probably because I'm so popular here.
+<color=#FDFF81>The Owner<color=white> pays really well, but beyond that he seems to always be busy.
+I can't help but think that if he really is as busy as he says he is, <color=#FF0000>this place wouldn't be such a dump.<color=white>
 @You
-(It looks like this club is prety good shape...)
-@Main Dancer
-I'd recommend staying away from the Stage Director, I have to talk with him almost everyday as he controls most of what we do, but he's evil.
-I don't just mean he's rude, he's got a mean streak in him.
-I don't ever mess up, I'm much too good for that, but I've heard from some of the other dancers that you don't want to make any mistakes around him.
-Speaking of other dancers, you should go talk to my Backup Dancer.
-She's definetely not as good as I am, but she sometimes fills in for me on nights I'm not here.
+<color=#6EEFFF>(It looks like this club is prety good shape...)<color=white>
+@Dancer
+I'd recommend staying away from <color=#FDFF81>The Stage Director,<color=white> I have to talk with him almost everyday as he controls most of what we do, but <color=#FF0000>he's too prideful.<color=white>
+I don't just mean he's rude, <color=#FF0000>he expects perfection from us,<color=white> and is harsh when we make mistakes.
+<color=#FF0000>I don't ever mess up,<color=white> I'm much too good for that, but I've heard from some of the other dancers that you don't want to make any mistakes around him.
+Speaking of other dancers, you should go talk to my <color=#FDFF81>Backup Dancer.<color=white>
+She's definetely not as good as I am, but <color=#FF0000>she sometimes fills in for me on nights I'm not here.<color=white>
 That's about it for the staff here.
 $Dialogue\Dancer\DNOPTIONS1
