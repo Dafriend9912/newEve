@@ -2,15 +2,18 @@
 Ah! you must be <color=#FDFF81>The Detective<color=white>
 @You
 Yep, and I'm guessing you're <color=#FDFF81>The Bartender<color=white>
+&1
 @Bartender
 Uh-huh. Thanks for coming, I wouldn't have asked for you if this wasn't very important
 @You
 Of course.
+&2
 But your note was rather vague. Why can't you tell me more?
 @Bartender
 Well... to be completely honest, I don't have any evidence.
 Two nights ago I was trying to place a call to my wife to tell her I'd be home later than usual.
 When I picked up the phone <color=#FF0000>I found that it was already in use.<color=white>
+&3
 I overheard <color=#FF0000>two voices<color=white> talking.
 They mentioned the <color=#FF0000>Gala<color=white> that's set to take place in one week.
 Said it'd be the perfect time for their plan.

@@ -21,6 +21,13 @@ public class TextManager : MonoBehaviour
     public CharController Chars;
     public string speaker;
     public Dictionary<string, bool> choicesdict = new Dictionary<string, bool>();
+    public GameObject intro1;
+    public GameObject intro2;
+    public GameObject intro3;
+    public GameObject bar;
+    public GameObject charYou;
+    public GameObject charOther;
+    public GameObject speakerObject;
 
     // Start is called before the first frame update
     void Start()
@@ -181,6 +188,30 @@ public class TextManager : MonoBehaviour
                     {
                         
                     }
+                }
+                else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '1')
+                {
+                    print("&1 seen");
+                    intro2.SetActive(true);
+                    intro1.SetActive(false);
+                    currline++;
+                }
+                else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '2')
+                {
+                    print("&2 seen");
+                    intro3.SetActive(true);
+                    intro2.SetActive(false);
+                    currline++;
+                }
+                else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '3')
+                {
+                    print("&3 seen");
+                    bar.SetActive(true);
+                    intro3.SetActive(false);
+                    currline++;
+                    charYou.SetActive(true);
+                    charOther.SetActive(true);
+                    speakerObject.SetActive(true);
                 }
                 //% change
                 //^ look up 
