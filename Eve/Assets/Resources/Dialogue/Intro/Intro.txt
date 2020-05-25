@@ -1,28 +1,27 @@
-This detective work is hard shit.
+*6This detective work is *1<color=#FF0000>hard shit.<color=white>
 I haven't had a real case in almost 5 months now.
 Sure I've had a few people drop by, but nothing more vexing than a case of lost keys.
 I can tell I'm starting to lose my edge.
-Like rust on a knife, all the signs are there.
-My creative thinking, possibly the most important aspect of a good detective has gone to shit.
-I'm stuck thinking of things as they appear. I've forgotten to see them for what they could be.
-Nor do I question as much as I should.
-It's insane what effect 5 months behind a desk can have on the human mind.
-Probably the biggest sign of my mental rust is the fact that I didn't even notice when <color=#FF0000>The Letter<color=white> arrived.
+Like rust on a dull knife, all the signs are there.
+My critical thinking skills, possibly the most important aspect of being a good detective have gone to shit.
+I'm stuck seeing things <i>as they appear.</i> I've forgotten to look at them for what <i>they could be.</i>
+It's insane what an effect 5 months behind a desk can have on the human mind.
+Probably the biggest sign of my mental rust is the fact that I didn't even notice when *2<color=#FF0000>The Letter<color=white> *3arrived.
 &1
-It must have shown up today, I'm sure of that, but when? I couldn't say.
+It must have shown up today, I'm sure of that, but <i>when?</i> *3I couldn't say.
 Although still unknown to me, it was a mundane question that no doubt had a mundane answer.
-I've always believed that the best mysteries are often solved by <color=#FF0000>the simplest of answers.<color=white>
-However, the simplest answers are never the first to present themselves, that's what makes the game of the detective so rousing.
-The letter promised even more of these intoxicating questions.
-<color=#FF0000>A special event.<color=white>
-<color=#FF0000>A popular nightclub.<color=white>
-<color=#FF0000>A possible murder.<color=white>
+I've always believed that the best mysteries are often solved by the <i>simplest of answers.</i>
+However, the simplest answers are <i>never</i> the first to present themselves, that's what makes the game of the detective so rousing.
+The letter promised even more of these <i>intoxicating</i> questions.
+*2<color=#FF0000>A special event.<color=white>
+*2<color=#FF0000>A popular nightclub.<color=white>
+*2<color=#FF0000>A possible murder.<color=white>
 <color=#FDFF81>The Bartender<color=white> who had signed the letter had left little else to go off of.
 &2
 Already I could feel my mind beginning to shake off the dust that had settled.
 <color=#FDFF81>The Bartender<color=white> had asked for <color=#FF0000>help.<color=white>
 <color=#FF0000>I will visit this nightclub. Learn the details of his suspicion...<color=white>
-<color=#FF0000>And if there is a murderer I will find them.<color=white>
-<color=#FF0000>The game has begun.<color=white>
+<color=#FF0000>And if there is a murderer... I will find them.<color=white>
+*1<color=#FF0000>The game has begun.<color=white>
 &3
 $Dialogue\Bartender\BTOPTIONS1
