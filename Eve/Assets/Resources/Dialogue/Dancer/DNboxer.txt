@@ -42,7 +42,7 @@ It was awful... But at the same time, It was the most emotion I've ever seen fro
 @You
 What happened to him?
 @Dancer
-Well, he got kicked out the club, but <color=#FF0000>I was so infatuated by him<color=white> at this point, I begged <color=#FDFF81>The Owner to let him back in.
+Well, he got kicked out the club, but <color=#FF0000>I was so infatuated by him<color=white> at this point, I begged <color=#FDFF81>The Owner<color=white> to let him back in.
 He eventually caved to my wishes, and <color=#FDFF81>The Boxer<color=white> returned to his kind self.
 He thanked me for allowing him back into the club, and we got to talking.
 <color=#FF0000>We ended up dating for a few months...<color=white>
@@ -51,7 +51,7 @@ Only a few months?
 @Dancer
 A man with a <color=#FF0000>streak of red hot rage<color=white> would be better left alone.
 <color=#FF0000>His fists never met me.<color=white> I was careful enough to never make a mistake around him.
-But Everywhere we went, <color=#FF0000>he'd leave a trail of broken bones of those that had "wronged" him.<color=white>
+But everywhere we went, <color=#FF0000>he'd leave a trail of broken bones of those that had "wronged" him.<color=white>
 I decided to play it safe, and <color=#FF0000>leave him before he could do the same to me.<color=white>
 @You
 What's he up to now?

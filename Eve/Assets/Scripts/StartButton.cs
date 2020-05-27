@@ -8,12 +8,16 @@ public class StartButton : MonoBehaviour
     public GameObject locations;
     public TextManager textManager;
     public ChoiceManager choiceManager;
+    public GameObject charYou;
+    public GameObject charOther;
 
     private void Start()
     {
         choiceManager.DisableDialoguePanel();
         choiceManager.DisableChoicePanel();
         textManager.DisableTextBox();
+        charYou.SetActive(false);
+        charOther.SetActive(false);
     }
 
     public void StartGame()
@@ -21,7 +25,8 @@ public class StartButton : MonoBehaviour
         locations.SetActive(true);
         textManager.EnableTextBox();
         currPanel.SetActive(false);
-        
+        charYou.SetActive(false);
+        charOther.SetActive(false);
 
     }
 }

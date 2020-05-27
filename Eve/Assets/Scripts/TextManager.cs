@@ -21,6 +21,13 @@ public class TextManager : MonoBehaviour
     public CharController Chars;
     public string speaker;
     public Dictionary<string, bool> choicesdict = new Dictionary<string, bool>();
+    public GameObject intro1;
+    public GameObject intro2;
+    public GameObject intro3;
+    public GameObject bar;
+    public GameObject charYou;
+    public GameObject charOther;
+    public GameObject speakerObject;
 
     // Start is called before the first frame update
     void Start()
@@ -76,13 +83,10 @@ public class TextManager : MonoBehaviour
         }
         else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
         {
-            print("OKAY IT SEES THE %");
             if (!choicesdict.ContainsKey(textlines[currline].Substring(1).Trim()))
             {
-                print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
                 choicesdict.Add(textlines[currline].Substring(1).Trim(), true);
                 string ret = choicesdict[textlines[currline].Substring(1).Trim()].ToString();
-                print(ret);
                 currline++;
                 nameText.text = textlines[currline].Substring(1);
                 speaker = textlines[currline].Substring(1).ToString();
@@ -127,7 +131,6 @@ public class TextManager : MonoBehaviour
 
     public void Continue()
     {
-        print("testing");
         if (active)
         {
             if (CR)
@@ -155,11 +158,8 @@ public class TextManager : MonoBehaviour
                 }
                 else if (textlines[currline].ToCharArray()[0] == '%') //to change the dictionary
                 {
-                    print("OKAY IT SEES THE %");
                     if(!choicesdict.ContainsKey(textlines[currline].Substring(1).Trim()))
                     {
-                        print("EEEEEEEEEEEEEEEEEEEEKTHISWORKS");
-                        print(textlines[currline]);
                         choicesdict.Add(textlines[currline].Substring(1).Trim(), true);
                         currline++;
                     }
@@ -176,11 +176,31 @@ public class TextManager : MonoBehaviour
                     bool t = true;
                     if (!choicesdict.ContainsKey(textlines[currline].Substring(1))) //for extra dialogue
                     {
-                        print("heythisruns");
                     } else 
                     {
                         
                     }
+                }
+                else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '1')
+                {
+                    intro2.SetActive(true);
+                    intro1.SetActive(false);
+                    currline++;
+                }
+                else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '2')
+                {
+                    intro3.SetActive(true);
+                    intro2.SetActive(false);
+                    currline++;
+                }
+                else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '3')
+                {
+                    bar.SetActive(true);
+                    intro3.SetActive(false);
+                    currline++;
+                    charYou.SetActive(true);
+                    charOther.SetActive(true);
+                    speakerObject.SetActive(true);
                 }
                 //% change
                 //^ look up 
@@ -206,52 +226,100 @@ public class TextManager : MonoBehaviour
             CR = false;
             StopCoroutine("PlayText");
             theText.text = "";
+            story = story.Replace("*1","");
+            story = story.Replace("*2", "");
+            story = story.Replace("*3", "");
+            story = story.Replace("*4", "");
+            story = story.Replace("*5", "");
+            story = story.Replace("*6", "");
             theText.text = story;
         }
-    }
-    IEnumerator PlayText2()
-    {
-        CR = true;
-        foreach (char c in story) 
-        {
-            if (c == '*')
-            {
-                
-                theText.text += "<color=yellow>" + c + "</color>";
-            }
-            else
-            {
-                theText.text += c;
-            }
-            yield return new WaitForSeconds (0.050f);
-        }
-        CR = false;
     }
 
     IEnumerator PlayText()
     {
         CR = true;
+        float speed = .032f;
         for (int i = 0; i < story.Length; i++ )
         {
             string color = "";
             char c = story[i];
-            if (c == '<')
+            if (c == '*')
+            {
+                i++;
+                c = story[i];
+                if (c == '1') //ultra slow
+                {
+                    speed = .12f;
+                }
+                if (c == '2') //slightly slow
+                {
+                    speed = .07f;
+                }
+                if (c == '3') //normal speed
+                {
+                    speed = .032f;
+                }
+                if (c == '4') // fast
+                {
+                    speed = .02f;
+                }
+                if (c == '5') //break without punctuation
+                {
+                    yield return new WaitForSeconds(.4f);
+                }
+                if (c == '6') //first line
+                {
+                    speed = .05f;
+                }
+            }
+            else if (c == ',' || c == '.' || c == '?')
+            {
+                theText.text += c;
+                yield return new WaitForSeconds(.4f);
+            }
+            else if (c == '<' && story[i+1] == 'i')
+            {
+                i += 2;
+                c = story[i];
+                while (c != '<')
+                {
+                    if (c == ',' || c == '.' || c == '?')
+                    {
+                        yield return new WaitForSeconds(.4f);
+                    }
+                    i++;
+                    c = story[i];
+                    if (c == '<')
+                    {
+                        break;
+                    }
+                    theText.text += "<i>" + c + "</i>";
+                    yield return new WaitForSeconds(.07f);
+                }
+                i += 4;
+                theText.text += story[i];
+            }
+            else if (c == '<')
             {
                 for (int j = 0; j < 7; j++)
                 {
                     color += story[i+j+7];
                 }
-                print("Next color is: " + color);
                 if (color == "#6EEFFF") // cyan - inner monologue
                 {
                     i += 14;
                     c = story[i];
                     while (c != '<')
                     {
+                        if (c == ',' || c == '.' || c == '?')
+                        {
+                            yield return new WaitForSeconds(.4f);
+                        }
                         i++;
                         c = story[i];
                         theText.text += "<color=#6EEFFF>" + c + "</color>";
-                        yield return new WaitForSeconds(0.060f);
+                        yield return new WaitForSeconds(speed);
                     }
                     i += 13;
                 }
@@ -261,10 +329,14 @@ public class TextManager : MonoBehaviour
                     c = story[i];
                     while (c != '<')
                     {
+                        if (c == ',' || c == '.' || c == '?')
+                        {
+                            yield return new WaitForSeconds(.4f);
+                        }
                         i++;
                         c = story[i];
                         theText.text += "<color=#FDFF81>" + c + "</color>";
-                        yield return new WaitForSeconds(0.060f);
+                        yield return new WaitForSeconds(speed);
                     }
                     i += 13;
                 }
@@ -274,10 +346,14 @@ public class TextManager : MonoBehaviour
                     c = story[i];
                     while (c != '<')
                     {
+                        if (c == ',' || c == '.' || c == '?')
+                        {
+                            yield return new WaitForSeconds(.4f);
+                        }
                         i++;
                         c = story[i];
                         theText.text += "<color=#FF0000>" + c + "</color>";
-                        yield return new WaitForSeconds(0.060f);
+                        yield return new WaitForSeconds(speed);
                     }
                     i += 13;
                 }
@@ -287,7 +363,7 @@ public class TextManager : MonoBehaviour
             {
                 theText.text += c;
             }
-            yield return new WaitForSeconds(0.040f);
+            yield return new WaitForSeconds(speed);
         }
         CR = false;
     }
