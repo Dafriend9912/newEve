@@ -29,6 +29,8 @@ public class TextManager : MonoBehaviour
     public GameObject charOther;
     public GameObject speakerObject;
     public GameObject introMusic;
+    public GameObject AnimationPanel;
+    public Animator Animate;
 
     // Start is called before the first frame update
     void Start()
@@ -196,16 +198,10 @@ public class TextManager : MonoBehaviour
                 }
                 else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '3')
                 {
-                    bar.SetActive(true);
-                    intro3.SetActive(false);
-                    introMusic.SetActive(false);
-                    currline++;
-                    charYou.SetActive(true);
-                    charOther.SetActive(true);
-                    speakerObject.SetActive(true);
-                    text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTfirstMeeting");
-                    DisableTextBox();
-                    EnableTextBox();
+                    AnimationPanel.SetActive(true);
+                    Animate.SetBool("Fadeout", true);
+                    StartCoroutine(ExampleCoroutine());
+                    print("aaa");
                     return;
                 }
                 else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '4')
@@ -388,6 +384,29 @@ public class TextManager : MonoBehaviour
             yield return new WaitForSeconds(speed);
         }
         CR = false;
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(.75f);
+        bar.SetActive(true);
+        intro3.SetActive(false);
+        currline++;
+        charYou.SetActive(true);
+        charOther.SetActive(true);
+        speakerObject.SetActive(true);
+        text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTfirstMeeting");
+        DisableTextBox();
+        StartCoroutine(pleasework());
+
+
+    }
+    IEnumerator pleasework()
+    {
+        yield return new WaitForSeconds(.55f);
+        EnableTextBox();
+        Animate.SetBool("Fadeout", false);
+        AnimationPanel.SetActive(false);
     }
 
 }

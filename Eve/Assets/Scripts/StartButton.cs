@@ -11,6 +11,8 @@ public class StartButton : MonoBehaviour
     public GameObject charYou;
     public GameObject charOther;
     public GameObject introMusic;
+    public GameObject AnimationPanel;
+    public Animator Animate;
 
     private void Start()
     {
@@ -19,14 +21,38 @@ public class StartButton : MonoBehaviour
         textManager.DisableTextBox();
         charYou.SetActive(false);
         charOther.SetActive(false);
+        AnimationPanel.SetActive(false);
+        locations.SetActive(false);
+
         introMusic.SetActive(false);
     }
 
     public void StartGame()
     {
+        AnimationPanel.SetActive(true);
+        Animate.SetBool("Fadeout", true);
+        StartCoroutine(ExampleCoroutine());
+        print("aaa");
+
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(.75f);
+        print("Thos work?");
         locations.SetActive(true);
-        textManager.EnableTextBox();
+        StartCoroutine(pleasework());
+        
+        
+    }
+    IEnumerator pleasework()
+    {
+        yield return new WaitForSeconds(.75f);
         currPanel.SetActive(false);
+        print("Thos work?");
+        Animate.SetBool("Fadeout", false);
+        AnimationPanel.SetActive(false);
+        textManager.EnableTextBox();
         charYou.SetActive(false);
         charOther.SetActive(false);
         introMusic.SetActive(true);
