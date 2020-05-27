@@ -10,6 +10,7 @@ public class StartButton : MonoBehaviour
     public ChoiceManager choiceManager;
     public GameObject charYou;
     public GameObject charOther;
+    public GameObject introMusic;
 
     private void Start()
     {
@@ -18,6 +19,7 @@ public class StartButton : MonoBehaviour
         textManager.DisableTextBox();
         charYou.SetActive(false);
         charOther.SetActive(false);
+        introMusic.SetActive(false);
     }
 
     public void StartGame()
@@ -27,6 +29,7 @@ public class StartButton : MonoBehaviour
         currPanel.SetActive(false);
         charYou.SetActive(false);
         charOther.SetActive(false);
+        introMusic.SetActive(true);
 
     }
 }

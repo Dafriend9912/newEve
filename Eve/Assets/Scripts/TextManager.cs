@@ -28,6 +28,7 @@ public class TextManager : MonoBehaviour
     public GameObject charYou;
     public GameObject charOther;
     public GameObject speakerObject;
+    public GameObject introMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -197,6 +198,7 @@ public class TextManager : MonoBehaviour
                 {
                     bar.SetActive(true);
                     intro3.SetActive(false);
+                    introMusic.SetActive(false);
                     currline++;
                     charYou.SetActive(true);
                     charOther.SetActive(true);
@@ -205,6 +207,22 @@ public class TextManager : MonoBehaviour
                     DisableTextBox();
                     EnableTextBox();
                     return;
+                }
+                else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '4')
+                {
+                    print("&4 seen");
+                    charYou.SetActive(false);
+                    charOther.SetActive(false);
+                    speakerObject.SetActive(false);
+                    currline++;
+                }
+                else if (textlines[currline].ToCharArray()[0] == '&' && textlines[currline].ToCharArray()[1] == '5')
+                {
+                    print("&5 seen");
+                    charYou.SetActive(true);
+                    charOther.SetActive(true);
+                    speakerObject.SetActive(true);
+                    currline++;
                 }
                 //% change
                 //^ look up 

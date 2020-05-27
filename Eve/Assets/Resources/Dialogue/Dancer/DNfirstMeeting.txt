@@ -36,11 +36,11 @@ I didn't say you did, but I'd like to make sure you won't.
 What is this all about?
 @You
 Well, it started from a phone call <color=#FDFF81>The Bartender<color=white> heard two nights ago...
-@   
+&4
 ...
 ...
 ...
-@You
+&5
 ...And then <color=#FDFF81>The Bartender<color=white> said I should come talk to you, so here I am.
 @Dancer
 Well he's right that <color=#FF0000>I'm easily the most popular person around here.<color=white>
