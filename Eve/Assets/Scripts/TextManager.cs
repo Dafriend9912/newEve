@@ -25,7 +25,9 @@ public class TextManager : MonoBehaviour
     public char[] Abc;
     private char k;
     private int result;
-    private int i;
+    private int j;
+    private int p;
+    private string u;
     private AudioSource audioSource;
     private AudioClip audioClip;
     public Dictionary<string, bool> choicesdict = new Dictionary<string, bool>();
@@ -118,7 +120,7 @@ public class TextManager : MonoBehaviour
         active = true;
         Chars.Chars();
         theText.text = textlines[currline];
-        story = theText.text; 
+        story = theText.text;
         theText.text = "";
         StartCoroutine ("PlayText");
         currline++;
@@ -251,6 +253,7 @@ public class TextManager : MonoBehaviour
             story = story.Replace("*5", "");
             story = story.Replace("*6", "");
             theText.text = story;
+            
         }
     }
 
@@ -276,7 +279,7 @@ public class TextManager : MonoBehaviour
                 }
                 if (c == '3') //normal speed
                 {
-                    speed = .032f;
+                    speed = .027f;
                 }
                 if (c == '4') // fast
                 {
@@ -293,16 +296,28 @@ public class TextManager : MonoBehaviour
             }
             else if (c == ',' || c == '.' || c == '?')
             {
-                if (!c.Equals('!') && !c.Equals('.') && !c.Equals(' ') && !c.Equals('?'))
+                print(c);
+                u = c.ToString();
+                if (!c.Equals(' ') && !c.Equals('<'))
                 {   
-                    k = c; //takes the letter puts it in k
-                    print(k);
-                    k = char.ToLower(k); //makes sure that letter is lowercase
-                    i = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
-                    audioClip = TypewriterSounds[i]; //this grabs the sound at that index in another dictionary
-                    audioSource = GetComponent<AudioSource>(); //initializes the audiosource
-                    audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
-                    audioSource.Play(); //plays the audioclip
+                    if (c.Equals('!') || c.Equals('.') || c.Equals('?') || u.Equals("'") || c.Equals(',') || c.Equals('(') || c.Equals(')') || c.Equals('-'))
+                    {
+                        j = typewriter['x'];
+                        audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                        audioSource.Play(); //plays the audioclip
+                    }
+                    else
+                    {
+                        k = c; //takes the letter puts it in k
+                        k = char.ToLower(k); //makes sure that letter is lowercase
+                        j = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
+                        audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                        audioSource.Play(); //plays the audioclip
+                    }
                 }
                 theText.text += c;
                 yield return new WaitForSeconds(.4f);
@@ -323,21 +338,55 @@ public class TextManager : MonoBehaviour
                     {
                         break;
                     }
-                    if (!c.Equals('!') && !c.Equals('.') && !c.Equals(' ') && !c.Equals('?'))
+                    print(c);
+                    u = c.ToString();
+                    if (!c.Equals(' ') && !c.Equals('<'))
                     {   
-                        k = c; //takes the letter puts it in k
-                        print(k);
-                        k = char.ToLower(k); //makes sure that letter is lowercase
-                        i = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
-                        audioClip = TypewriterSounds[i]; //this grabs the sound at that index in another dictionary
-                        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
-                        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
-                        audioSource.Play(); //plays the audioclip
+                        if (c.Equals('!') || c.Equals('.') || c.Equals('?') || u.Equals("'") || c.Equals(',') || c.Equals('(') || c.Equals(')') || c.Equals('-'))
+                        {
+                            j = typewriter['x'];
+                            audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                            audioSource.Play(); //plays the audioclip
+                        }
+                        else
+                        {
+                            k = c; //takes the letter puts it in k
+                            k = char.ToLower(k); //makes sure that letter is lowercase
+                            j = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
+                            audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                            audioSource.Play(); //plays the audioclip
+                        }
                     }
                     theText.text += "<i>" + c + "</i>";
                     yield return new WaitForSeconds(.07f);
                 }
                 i += 4;
+                u = c.ToString();
+                if (!c.Equals(' ') && !c.Equals('<'))
+                {   
+                    if (c.Equals('!') || c.Equals('.') || c.Equals('?') || u.Equals("'") || c.Equals(',') || c.Equals('(') || c.Equals(')') || c.Equals('-'))
+                    {
+                        j = typewriter['x'];
+                        audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                        audioSource.Play(); //plays the audioclip
+                    }
+                    else
+                    {
+                        k = c; //takes the letter puts it in k
+                        k = char.ToLower(k); //makes sure that letter is lowercase
+                        j = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
+                        audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                        audioSource.Play(); //plays the audioclip
+                    }
+                }
                 theText.text += story[i];
             }
             else if (c == '<')
@@ -358,17 +407,29 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
-                        if (!c.Equals('!') && !c.Equals('.') && !c.Equals(' ') && !c.Equals('?'))
-                        {   
-                            k = c; //takes the letter puts it in k
-                            print(k);
-                            k = char.ToLower(k); //makes sure that letter is lowercase
-                            i = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
-                            audioClip = TypewriterSounds[i]; //this grabs the sound at that index in another dictionary
+                        print(c);
+                        u = c.ToString();
+                    if (!c.Equals(' ') && !c.Equals('<'))
+                    {   
+                        if (c.Equals('!') || c.Equals('.') || c.Equals('?') || u.Equals("'") || c.Equals(',') || c.Equals('(') || c.Equals(')') || c.Equals('-'))
+                        {
+                            j = typewriter['x'];
+                            audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
                             audioSource = GetComponent<AudioSource>(); //initializes the audiosource
                             audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
                             audioSource.Play(); //plays the audioclip
                         }
+                        else
+                        {
+                            k = c; //takes the letter puts it in k
+                            k = char.ToLower(k); //makes sure that letter is lowercase
+                            j = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
+                            audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                            audioSource.Play(); //plays the audioclip
+                        }
+                    }
                         theText.text += "<color=#6EEFFF>" + c + "</color>";
                         yield return new WaitForSeconds(speed);
                     }
@@ -386,17 +447,29 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
-                        if (!c.Equals('!') && !c.Equals('.') && !c.Equals(' ') && !c.Equals('?'))
-                        {   
-                            k = c; //takes the letter puts it in k
-                            print(k);
-                            k = char.ToLower(k); //makes sure that letter is lowercase
-                            i = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
-                            audioClip = TypewriterSounds[i]; //this grabs the sound at that index in another dictionary
+                        print(c);
+                        u = c.ToString();
+                    if (!c.Equals(' ') && !c.Equals('<'))
+                    {   
+                        if (c.Equals('!') || c.Equals('.') || c.Equals('?') || u.Equals("'") || c.Equals(',') || c.Equals('(') || c.Equals(')') || c.Equals('-'))
+                        {
+                            j = typewriter['x'];
+                            audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
                             audioSource = GetComponent<AudioSource>(); //initializes the audiosource
                             audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
                             audioSource.Play(); //plays the audioclip
                         }
+                        else
+                        {
+                            k = c; //takes the letter puts it in k
+                            k = char.ToLower(k); //makes sure that letter is lowercase
+                            j = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
+                            audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                            audioSource.Play(); //plays the audioclip
+                        }
+                    }
                         theText.text += "<color=#FDFF81>" + c + "</color>";
                         yield return new WaitForSeconds(speed);
                     }
@@ -414,17 +487,29 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
-                        if (!c.Equals('!') && !c.Equals('.') && !c.Equals(' ') && !c.Equals('?'))
-                        {   
-                            k = c; //takes the letter puts it in k
-                            print(k);
-                            k = char.ToLower(k); //makes sure that letter is lowercase
-                            i = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
-                            audioClip = TypewriterSounds[i]; //this grabs the sound at that index in another dictionary
+                        print(c);
+                        u = c.ToString();
+                    if (!c.Equals(' ') && !c.Equals('<'))
+                    {   
+                        if (c.Equals('!') || c.Equals('.') || c.Equals('?') || u.Equals("'") || c.Equals(',') || c.Equals('(') || c.Equals(')') || c.Equals('-'))
+                        {
+                            j = typewriter['x'];
+                            audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
                             audioSource = GetComponent<AudioSource>(); //initializes the audiosource
                             audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
                             audioSource.Play(); //plays the audioclip
                         }
+                        else
+                        {
+                            k = c; //takes the letter puts it in k
+                            k = char.ToLower(k); //makes sure that letter is lowercase
+                            j = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
+                            audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                            audioSource.Play(); //plays the audioclip
+                        }
+                    }
                         theText.text += "<color=#FF0000>" + c + "</color>";
                         yield return new WaitForSeconds(speed);
                     }
@@ -434,16 +519,28 @@ public class TextManager : MonoBehaviour
             }
             else
             {
-            if (!c.Equals('!') && !c.Equals('.') && !c.Equals(' ') && !c.Equals('?'))
+                u = c.ToString();
+                print(c);
+                if (!c.Equals(' ') && !c.Equals('<'))
                 {   
-                    k = c; //takes the letter puts it in k
-                    print(k);
-                    k = char.ToLower(k); //makes sure that letter is lowercase
-                    i = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
-                    audioClip = TypewriterSounds[i]; //this grabs the sound at that index in another dictionary
-                    audioSource = GetComponent<AudioSource>(); //initializes the audiosource
-                    audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
-                    audioSource.Play(); //plays the audioclip
+                    if (c.Equals('!') || c.Equals('.') || c.Equals('?') || u.Equals("'") || c.Equals(',') || c.Equals('(') || c.Equals(')') || c.Equals('-'))
+                    {
+                        j = typewriter['x'];
+                        audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                        audioSource.Play(); //plays the audioclip
+                    }
+                    else
+                    {
+                        k = c; //takes the letter puts it in k
+                        k = char.ToLower(k); //makes sure that letter is lowercase
+                        j = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
+                        audioClip = TypewriterSounds[j]; //this grabs the sound at that index in another dictionary
+                        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                        audioSource.Play(); //plays the audioclip
+                    }
                 }
                 theText.text += c;
             }
@@ -453,11 +550,11 @@ public class TextManager : MonoBehaviour
     }
     public void dictionaryfiller()
     {
-        i = 0;
+        p = 0;
         foreach (char s in Abc)
         {
-            typewriter.Add(s,i);
-            i++;
+            typewriter.Add(s,p);
+            p++;
         }
     }
 
