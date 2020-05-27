@@ -248,6 +248,9 @@ MonoBehaviour:
   currPanel: {fileID: 0}
   locations: {fileID: 0}
   textManager: {fileID: 0}
+  choiceManager: {fileID: 0}
+  charYou: {fileID: 0}
+  charOther: {fileID: 0}
 --- !u!1 &8247637102928949246
 GameObject:
   m_ObjectHideFlags: 0
