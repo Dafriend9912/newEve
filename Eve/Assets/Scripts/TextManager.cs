@@ -201,6 +201,10 @@ public class TextManager : MonoBehaviour
                     charYou.SetActive(true);
                     charOther.SetActive(true);
                     speakerObject.SetActive(true);
+                    text = Resources.Load<TextAsset>(@"Dialogue\Bartender\BTfirstMeeting");
+                    DisableTextBox();
+                    EnableTextBox();
+                    return;
                 }
                 //% change
                 //^ look up 
