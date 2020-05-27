@@ -434,6 +434,17 @@ public class TextManager : MonoBehaviour
             }
             else
             {
+            if (!c.Equals('!') && !c.Equals('.') && !c.Equals(' ') && !c.Equals('?'))
+                {   
+                    k = c; //takes the letter puts it in k
+                    print(k);
+                    k = char.ToLower(k); //makes sure that letter is lowercase
+                    i = typewriter[k]; //indexes into the dictionary of letters to indexes to grab the index for that number
+                    audioClip = TypewriterSounds[i]; //this grabs the sound at that index in another dictionary
+                    audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+                    audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+                    audioSource.Play(); //plays the audioclip
+                }
                 theText.text += c;
             }
             yield return new WaitForSeconds(speed);
