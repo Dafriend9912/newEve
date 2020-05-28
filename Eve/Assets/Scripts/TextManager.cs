@@ -323,7 +323,7 @@ public class TextManager : MonoBehaviour
                     yield return new WaitForSeconds(.07f);
                 }
                 i += 4;
-                HelperPlay();
+                //HelperPlay();
                 theText.text += story[i];
             }
             else if (c == '<')
@@ -451,14 +451,21 @@ public class TextManager : MonoBehaviour
 
     public void HelperPlay()
     {
-        /*if (speed == .12f || speed == .07f)
+        if (speed == .12f || speed == .07f) //play every slow part
+        {
+            audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
+            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+            audioSource.Play();
+        }
+        /*else if (Random.Range(0,11) < 7) //play 60% of the time
         {
             audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
             audioSource = GetComponent<AudioSource>(); //initializes the audiosource
             audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
             audioSource.Play();
         }*/
-        if (counter % 1 == 0)
+        else if (counter % 2 == 0) //play every other note
         {
             audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
             audioSource = GetComponent<AudioSource>(); //initializes the audiosource
@@ -466,5 +473,6 @@ public class TextManager : MonoBehaviour
             audioSource.Play();
         }
         counter++;
+        
     }
 }
