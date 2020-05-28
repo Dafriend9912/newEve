@@ -31,7 +31,7 @@ public class TextManager : MonoBehaviour
     public GameObject introMusic;
     public GameObject AnimationPanel;
     public Animator Animate;
-
+    public AudioClip[] typeWriterSounds;
     // Start is called before the first frame update
     void Start()
     {
@@ -291,12 +291,12 @@ public class TextManager : MonoBehaviour
                     speed = .05f;
                 }
             }
-            else if (c == ',' || c == '.' || c == '?')
+            else if (c == ',' || c == '.' || c == '?') //punctuation break
             {
                 theText.text += c;
                 yield return new WaitForSeconds(.4f);
             }
-            else if (c == '<' && story[i+1] == 'i')
+            else if (c == '<' && story[i+1] == 'i') //italics
             {
                 i += 2;
                 c = story[i];
@@ -409,4 +409,10 @@ public class TextManager : MonoBehaviour
         AnimationPanel.SetActive(false);
     }
 
+    public void HelperPlay()
+    {
+        audioClip = typeWriterSounds[Random.Range(1,4)]; //this grabs the sound at that index in another dictionary
+        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+    }
 }
