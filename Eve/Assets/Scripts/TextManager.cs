@@ -35,6 +35,7 @@ public class TextManager : MonoBehaviour
     private AudioSource audioSource;
     private AudioClip audioClip;
     private int counter;
+    private float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -261,7 +262,7 @@ public class TextManager : MonoBehaviour
     {
         counter = 0;
         CR = true;
-        float speed = .032f;
+        speed = .032f;
         for (int i = 0; i < story.Length; i++ )
         {
             string color = "";
@@ -341,10 +342,18 @@ public class TextManager : MonoBehaviour
                         {
                             yield return new WaitForSeconds(.4f);
                         }
+
                         i++;
                         c = story[i];
-                        HelperPlay();
-                        theText.text += "<color=#6EEFFF>" + c + "</color>";
+                        if (c == '<')
+                        {
+                            theText.text += "<color=#6EEFFF>" + c + "</color>";
+                        }
+                        else
+                        {
+                            HelperPlay();
+                            theText.text += "<color=#6EEFFF>" + c + "</color>";
+                        }
                         yield return new WaitForSeconds(speed);
                     }
                     i += 13;
@@ -361,8 +370,15 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
-                        HelperPlay();
-                        theText.text += "<color=#FDFF81>" + c + "</color>";
+                        if (c == '<')
+                        {
+                            theText.text += "<color=#FDFF81>" + c + "</color>";
+                        }
+                        else
+                        {
+                            HelperPlay();
+                            theText.text += "<color=#FDFF81>" + c + "</color>";
+                        }
                         yield return new WaitForSeconds(speed);
                     }
                     i += 13;
@@ -379,16 +395,28 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
-                        HelperPlay();
-                        theText.text += "<color=#FF0000>" + c + "</color>";
+                        if (c == '<')
+                        {
+                            theText.text += "<color=#FF0000>" + c + "</color>";
+                        }
+                        else
+                        {
+                            HelperPlay();
+                            theText.text += "<color=#FF0000>" + c + "</color>";
+                        }
                         yield return new WaitForSeconds(speed);
                     }
                     i += 13;
                 }
 
             }
+            else if (!char.IsLetterOrDigit(c))
+            {
+                theText.text += c;
+            }
             else
             {
+                print("else");
                 HelperPlay();
                 theText.text += c;
             }
@@ -402,6 +430,7 @@ public class TextManager : MonoBehaviour
         yield return new WaitForSeconds(.75f);
         bar.SetActive(true);
         intro3.SetActive(false);
+        introMusic.SetActive(false);
         currline++;
         charYou.SetActive(true);
         charOther.SetActive(true);
@@ -422,12 +451,20 @@ public class TextManager : MonoBehaviour
 
     public void HelperPlay()
     {
-        if (counter % 2 == 0)
+        /*if (speed == .12f || speed == .07f)
         {
-            audioClip = typeWriterSounds[Random.Range(1, 4)]; //this grabs the sound at that index in another dictionary
+            audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
+            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+            audioSource.Play();
+        }*/
+        if (counter % 1 == 0)
+        {
+            audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
             audioSource = GetComponent<AudioSource>(); //initializes the audiosource
             audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
             audioSource.Play();
         }
+        counter++;
     }
 }

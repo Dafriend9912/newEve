@@ -1,7 +1,7 @@
 @Bartender
-Ah! you must be <color=#FDFF81>The Detective<color=white>
+Ah! you must be <color=#FDFF81>The Detective.<color=white>
 @You
-Yep, and I'm guessing you're <color=#FDFF81>The Bartender<color=white>
+Yep, and I'm guessing you're <color=#FDFF81>The Bartender<color=white> who asked for me.
 @Bartender
 Uh-huh. Thanks for coming, I wouldn't have asked for you if this wasn't very important
 @You
