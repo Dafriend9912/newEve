@@ -32,6 +32,9 @@ public class TextManager : MonoBehaviour
     public GameObject AnimationPanel;
     public Animator Animate;
     public AudioClip[] typeWriterSounds;
+    private AudioSource audioSource;
+    private AudioClip audioClip;
+    private int counter;
     // Start is called before the first frame update
     void Start()
     {
@@ -256,6 +259,7 @@ public class TextManager : MonoBehaviour
 
     IEnumerator PlayText()
     {
+        counter = 0;
         CR = true;
         float speed = .032f;
         for (int i = 0; i < story.Length; i++ )
@@ -293,6 +297,7 @@ public class TextManager : MonoBehaviour
             }
             else if (c == ',' || c == '.' || c == '?') //punctuation break
             {
+                HelperPlay();
                 theText.text += c;
                 yield return new WaitForSeconds(.4f);
             }
@@ -312,10 +317,12 @@ public class TextManager : MonoBehaviour
                     {
                         break;
                     }
+                    HelperPlay();
                     theText.text += "<i>" + c + "</i>";
                     yield return new WaitForSeconds(.07f);
                 }
                 i += 4;
+                HelperPlay();
                 theText.text += story[i];
             }
             else if (c == '<')
@@ -336,6 +343,7 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
+                        HelperPlay();
                         theText.text += "<color=#6EEFFF>" + c + "</color>";
                         yield return new WaitForSeconds(speed);
                     }
@@ -353,6 +361,7 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
+                        HelperPlay();
                         theText.text += "<color=#FDFF81>" + c + "</color>";
                         yield return new WaitForSeconds(speed);
                     }
@@ -370,6 +379,7 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
+                        HelperPlay();
                         theText.text += "<color=#FF0000>" + c + "</color>";
                         yield return new WaitForSeconds(speed);
                     }
@@ -379,6 +389,7 @@ public class TextManager : MonoBehaviour
             }
             else
             {
+                HelperPlay();
                 theText.text += c;
             }
             yield return new WaitForSeconds(speed);
@@ -411,8 +422,12 @@ public class TextManager : MonoBehaviour
 
     public void HelperPlay()
     {
-        audioClip = typeWriterSounds[Random.Range(1,4)]; //this grabs the sound at that index in another dictionary
-        audioSource = GetComponent<AudioSource>(); //initializes the audiosource
-        audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+        if (counter % 2 == 0)
+        {
+            audioClip = typeWriterSounds[Random.Range(1, 4)]; //this grabs the sound at that index in another dictionary
+            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+            audioSource.Play();
+        }
     }
 }
