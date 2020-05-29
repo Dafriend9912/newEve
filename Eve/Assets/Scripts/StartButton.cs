@@ -32,7 +32,8 @@ public class StartButton : MonoBehaviour
         AnimationPanel.SetActive(true);
         Animate.SetBool("Fadeout", true);
         StartCoroutine(ExampleCoroutine());
-        print("aaa");
+        AudioSource music = currPanel.GetComponent<AudioSource>();
+        StartCoroutine(StartFade(music,.75f,0f));
 
     }
 
@@ -57,5 +58,18 @@ public class StartButton : MonoBehaviour
         charOther.SetActive(false);
         introMusic.SetActive(true);
 
+    }
+    IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
+    {
+        float currentTime = 0;
+        float start = audioSource.volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
     }
 }

@@ -427,6 +427,8 @@ public class TextManager : MonoBehaviour
 
     IEnumerator ExampleCoroutine()
     {
+        AudioSource music = introMusic.GetComponent<AudioSource>();
+        StartCoroutine(StartFade(music, .75f, 0f));
         yield return new WaitForSeconds(.75f);
         bar.SetActive(true);
         intro3.SetActive(false);
@@ -481,5 +483,18 @@ public class TextManager : MonoBehaviour
         }
         counter++;
         
+    }
+    IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
+    {
+        float currentTime = 0;
+        float start = audioSource.volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
     }
 }
