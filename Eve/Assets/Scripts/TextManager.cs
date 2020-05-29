@@ -31,7 +31,11 @@ public class TextManager : MonoBehaviour
     public GameObject introMusic;
     public GameObject AnimationPanel;
     public Animator Animate;
-
+    public AudioClip[] typeWriterSounds;
+    private AudioSource audioSource;
+    private AudioClip audioClip;
+    private int counter;
+    private float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -256,8 +260,9 @@ public class TextManager : MonoBehaviour
 
     IEnumerator PlayText()
     {
+        counter = 0;
         CR = true;
-        float speed = .032f;
+        speed = .032f;
         for (int i = 0; i < story.Length; i++ )
         {
             string color = "";
@@ -291,12 +296,13 @@ public class TextManager : MonoBehaviour
                     speed = .05f;
                 }
             }
-            else if (c == ',' || c == '.' || c == '?')
+            else if (c == ',' || c == '.' || c == '?') //punctuation break
             {
+                HelperPlay();
                 theText.text += c;
                 yield return new WaitForSeconds(.4f);
             }
-            else if (c == '<' && story[i+1] == 'i')
+            else if (c == '<' && story[i+1] == 'i') //italics
             {
                 i += 2;
                 c = story[i];
@@ -312,10 +318,12 @@ public class TextManager : MonoBehaviour
                     {
                         break;
                     }
+                    HelperPlay();
                     theText.text += "<i>" + c + "</i>";
                     yield return new WaitForSeconds(.07f);
                 }
                 i += 4;
+                //HelperPlay();
                 theText.text += story[i];
             }
             else if (c == '<')
@@ -334,9 +342,18 @@ public class TextManager : MonoBehaviour
                         {
                             yield return new WaitForSeconds(.4f);
                         }
+
                         i++;
                         c = story[i];
-                        theText.text += "<color=#6EEFFF>" + c + "</color>";
+                        if (c == '<')
+                        {
+                            theText.text += "<color=#6EEFFF>" + c + "</color>";
+                        }
+                        else
+                        {
+                            HelperPlay();
+                            theText.text += "<color=#6EEFFF>" + c + "</color>";
+                        }
                         yield return new WaitForSeconds(speed);
                     }
                     i += 13;
@@ -353,7 +370,15 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
-                        theText.text += "<color=#FDFF81>" + c + "</color>";
+                        if (c == '<')
+                        {
+                            theText.text += "<color=#FDFF81>" + c + "</color>";
+                        }
+                        else
+                        {
+                            HelperPlay();
+                            theText.text += "<color=#FDFF81>" + c + "</color>";
+                        }
                         yield return new WaitForSeconds(speed);
                     }
                     i += 13;
@@ -370,15 +395,29 @@ public class TextManager : MonoBehaviour
                         }
                         i++;
                         c = story[i];
-                        theText.text += "<color=#FF0000>" + c + "</color>";
+                        if (c == '<')
+                        {
+                            theText.text += "<color=#FF0000>" + c + "</color>";
+                        }
+                        else
+                        {
+                            HelperPlay();
+                            theText.text += "<color=#FF0000>" + c + "</color>";
+                        }
                         yield return new WaitForSeconds(speed);
                     }
                     i += 13;
                 }
 
             }
+            else if (!char.IsLetterOrDigit(c))
+            {
+                theText.text += c;
+            }
             else
             {
+                print("else");
+                HelperPlay();
                 theText.text += c;
             }
             yield return new WaitForSeconds(speed);
@@ -391,6 +430,7 @@ public class TextManager : MonoBehaviour
         yield return new WaitForSeconds(.75f);
         bar.SetActive(true);
         intro3.SetActive(false);
+        introMusic.SetActive(false);
         currline++;
         charYou.SetActive(true);
         charOther.SetActive(true);
@@ -409,4 +449,30 @@ public class TextManager : MonoBehaviour
         AnimationPanel.SetActive(false);
     }
 
+    public void HelperPlay()
+    {
+        if (speed == .12f || speed == .07f) //play every slow part
+        {
+            audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
+            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+            audioSource.Play();
+        }
+        /*else if (Random.Range(0,11) < 7) //play 60% of the time
+        {
+            audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
+            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+            audioSource.Play();
+        }*/
+        else if (counter % 2 == 0) //play every other note
+        {
+            audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
+            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+            audioSource.Play();
+        }
+        counter++;
+        
+    }
 }
