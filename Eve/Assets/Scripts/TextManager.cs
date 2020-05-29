@@ -298,7 +298,7 @@ public class TextManager : MonoBehaviour
             }
             else if (c == ',' || c == '.' || c == '?') //punctuation break
             {
-                HelperPlay();
+                HelperPlay(c);
                 theText.text += c;
                 yield return new WaitForSeconds(.4f);
             }
@@ -318,7 +318,7 @@ public class TextManager : MonoBehaviour
                     {
                         break;
                     }
-                    HelperPlay();
+                    HelperPlay(c);
                     theText.text += "<i>" + c + "</i>";
                     yield return new WaitForSeconds(.07f);
                 }
@@ -351,7 +351,7 @@ public class TextManager : MonoBehaviour
                         }
                         else
                         {
-                            HelperPlay();
+                            HelperPlay(c);
                             theText.text += "<color=#6EEFFF>" + c + "</color>";
                         }
                         yield return new WaitForSeconds(speed);
@@ -376,7 +376,7 @@ public class TextManager : MonoBehaviour
                         }
                         else
                         {
-                            HelperPlay();
+                            HelperPlay(c);
                             theText.text += "<color=#FDFF81>" + c + "</color>";
                         }
                         yield return new WaitForSeconds(speed);
@@ -401,7 +401,7 @@ public class TextManager : MonoBehaviour
                         }
                         else
                         {
-                            HelperPlay();
+                            HelperPlay(c);
                             theText.text += "<color=#FF0000>" + c + "</color>";
                         }
                         yield return new WaitForSeconds(speed);
@@ -417,7 +417,7 @@ public class TextManager : MonoBehaviour
             else
             {
                 print("else");
-                HelperPlay();
+                HelperPlay(c);
                 theText.text += c;
             }
             yield return new WaitForSeconds(speed);
@@ -449,9 +449,16 @@ public class TextManager : MonoBehaviour
         AnimationPanel.SetActive(false);
     }
 
-    public void HelperPlay()
+    public void HelperPlay(char c)
     {
         if (speed == .12f || speed == .07f) //play every slow part
+        {
+            audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
+            audioSource = GetComponent<AudioSource>(); //initializes the audiosource
+            audioSource.clip = audioClip; //sets the audiosource.clip to the audioclip that I grabbed earlier
+            audioSource.Play();
+        }
+        else if (c == '.' || c == ',') //play every period and comma
         {
             audioClip = typeWriterSounds[Random.Range(0, typeWriterSounds.Length)]; //this grabs the sound at that index in another dictionary
             audioSource = GetComponent<AudioSource>(); //initializes the audiosource
