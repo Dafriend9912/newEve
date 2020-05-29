@@ -14,4 +14,4 @@ I think <color=#FF0000>he must be a gambler<color=white> or something, because h
 We've talked once, <color=#FF0000>but he doesn't spend much money on me.<color=white> I wonder why.
 @You
 <color=#6EEFFF>(I wouldn't be spending money on you either once I heard you talk...)<color=white>
-#Dialogue\Dancer\DNOPTIONS3
+#Dialogue\Dancer\DNOPTIONS1

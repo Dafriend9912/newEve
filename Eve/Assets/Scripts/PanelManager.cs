@@ -61,7 +61,7 @@ public class PanelManager : MonoBehaviour
         yield return new WaitForSeconds(.75f);
         BartenderPanel.SetActive(true);
         print(BartenderPanel.activeSelf ? "Bartender Panel should be Active" : "Inactive");
-        Other.sprite = Resources.Load<Sprite>(@"Characters\IxD bartender silhouette");
+        Other.sprite = Resources.Load<Sprite>(@"Characters\IxD bartender V2");
         StartCoroutine(Bartender2());
     }
 
