@@ -445,8 +445,8 @@ public class TextManager : MonoBehaviour
     }
     IEnumerator pleasework()
     {
-        yield return new WaitForSeconds(.55f);
         EnableTextBox();
+        yield return new WaitForSeconds(.75f);
         Animate.SetBool("Fadeout", false);
         AnimationPanel.SetActive(false);
     }

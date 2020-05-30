@@ -62,14 +62,15 @@ public class PanelManager : MonoBehaviour
         BartenderPanel.SetActive(true);
         print(BartenderPanel.activeSelf ? "Bartender Panel should be Active" : "Inactive");
         Other.sprite = Resources.Load<Sprite>(@"Characters\IxD bartender V2");
+        currentPanel.SetActive(false);
         StartCoroutine(Bartender2());
     }
 
     IEnumerator Bartender2()
     {
-        yield return new WaitForSeconds(.65f);
-        currentPanel.SetActive(false);
         Manager.EnableTextBox();
+        yield return new WaitForSeconds(.75f);
+
         Animate.SetBool("Fadeout", false);
         AnimationPanel.SetActive(false);
     }
@@ -79,15 +80,16 @@ public class PanelManager : MonoBehaviour
         DancerPanel.SetActive(true);
         Manager.text = Resources.Load<TextAsset>(@"Dialogue\Dancer\DNfirstMeeting");
         Other.sprite = Resources.Load<Sprite>(@"Characters\IxD dancer V2");
+        currentPanel.SetActive(false);
         StartCoroutine(Dancer2());
     }
 
     IEnumerator Dancer2()
     {
-        yield return new WaitForSeconds(.65f);
-        currentPanel.SetActive(false);
-        AnimationPanel.SetActive(false);
         Manager.EnableTextBox();
+        yield return new WaitForSeconds(.75f);
+        AnimationPanel.SetActive(false);
+
         Animate.SetBool("Fadeout", false);
         
     }
