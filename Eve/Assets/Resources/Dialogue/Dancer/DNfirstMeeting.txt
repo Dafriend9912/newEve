@@ -1,46 +1,46 @@
-@Main Dancer
+@Dancer
 ...No that's stupid, why would I want to do that?
 @You
-(Hmm she's on the phone...)
-@Main Dancer
+<color=#6EEFFF>(Hmm she's on the phone...)<color=white>
+@Dancer
 I don't care if that's what you want, what makes you think I'd want that?
 @You
-(I should probably interrupt her, but now I'm curious about this call...)
-@Main Dancer
-Fine, just stop calling me until you've got a real job!
+<color=#6EEFFF>(I should probably interrupt her, but now I'm curious about this call...)<color=white>
+@Dancer
+Fine, <color=#FF0000>just stop calling me<color=white> until you've got a real job!
 @You
-(Looks like she's noticed me...)
+<color=#6EEFFF>(Looks like she's noticed me...)<color=white>
 Hi, are you th-
-@Main Dancer
+@Dancer
 What the hell? How did you get back here?
 Nevermind, I don't care.
 I'm not going to give you any of my time, so you better walk away before I get someone to kick your ass!
 @You
-This is important. Are you the Main Dancer around here?
-@Main Dancer
+This is important. Are you the <color=#FDFF81>Main Dancer<color=white> around here?
+@Dancer
 Don't act like you didn't know that you perv!
-Everyone here knows me!
+<color=#FF0000>Everyone here knows me!<color=white>
 How long have you been coming to the club?
-I bet you're dying for a piece of me just like every other loser who comes here.
+I bet you're dying for a piece of me <color=#FF0000>just like every other loser who comes here.<color=white>
 @You
-(She seems pretty arrogant, this is defiently the Dancer the Bartender told me about...)
-I'm not a patron here, I'm a detective.
-@Main Dancer
+<color=#6EEFFF>(She seems pretty arrogant, this is defiently the Dancer The Bartender told me about...)<color=white>
+I'm not a patron here, I'm <color=#FDFF81>A Detective.<color=white>
+@Dancer
 !!!
 Detective?
 I ain't done nothing wrong!
 @You
-(It's incredible how often I hear that in my line of work...)
+<color=#6EEFFF>(It's incredible how often I hear that in my line of work...)<color=white>
 I didn't say you did, but I'd like to make sure you won't.
-@Main Dancer
+@Dancer
 What is this all about?
 @You
-Well, it started from a phone call The Bartender heard two nights ago...
-@   
+Well, it started from a phone call <color=#FDFF81>The Bartender<color=white> heard two nights ago...
+&4
 ...
 ...
-@You
-...And then The Bartender said I should come talk to you, so here I am.
-@Main Dancer
-Well he's right that I'm easily the most popular person around here.
+&5
+...And then <color=#FDFF81>The Bartender<color=white> said I should come talk to you, so here I am.
+@Dancer
+Well he's right that <color=#FF0000>I'm easily the most popular person around here.<color=white>
 $Dialogue\Dancer\DNOPTIONS1

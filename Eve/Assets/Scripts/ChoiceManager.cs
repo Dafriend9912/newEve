@@ -76,40 +76,40 @@ public class ChoiceManager : MonoBehaviour
         }
         if (textlines.Length >= 4)
         {
-            if (textlines[3].ToCharArray()[0] == '^') //to look up something in the dictionary
+            if (path == @"Dialogue\Dancer\DNOPTIONS3")
             {
-                if (path == @"Dialogue\Dancer\DNOPTIONS3")
+                print(textlines[5]);
+                print(texting.choicesdict.ContainsKey("Call2"));
+                if (texting.choicesdict.ContainsKey("DNstaff"))
                 {
-                    print(textlines[5]);
-                    print(texting.choicesdict.ContainsKey("Call2"));
-                    if (texting.choicesdict.ContainsKey("DNstaff"))
-                    {
-                        Button4Text.text = textlines[4];
-                        Button4.interactable = true;
-                    }
-                    else
-                    {
-                        Button4Text.text = "";
-                        Button4.interactable = false;
-                    }
+                    Button4Text.text = textlines[4];
+                    Button4.interactable = true;
+                }
+                else
+                {
+                    Button4Text.text = "";
+                    Button4.interactable = false;
                 }
             }
-            else
+            else if (path == @"Dialogue\Bartender\BTOPTIONS3" || path == @"Dialogue\Owner\ONOPTIONS3")
             {
-                Button4Text.text = "";
-                Button4.interactable = false;
+                Button4Text.text = textlines[3];
+                Button4.interactable = true;
             }
+        else
+        {
+            Button4Text.text = "";
+            Button4.interactable = false;
+        }
         }
         else
         {
-            Button5Text.text = "";
-            Button5.interactable = false;
+            Button4Text.text = "";
+            Button4.interactable = false;
         }
         bool t = true;
         if (textlines.Length >= 5)
         {
-            if (textlines[4].ToCharArray()[0] == '^') //to look up something in the dictionary
-            {
                 if (path == @"Dialogue\Owner\ONOPTIONS3")
                 {
                     print(textlines[5]);
@@ -125,12 +125,21 @@ public class ChoiceManager : MonoBehaviour
                         Button5.interactable = false;
                     }
                 }
-            }
-            if (path == @"Dialogue\Dancer\DNOPTIONS3")
-            {
-                Button5.interactable = false;
-                Button5Text.text = "";
-            }
+                else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+                {
+                    print(textlines[5]);
+                    print(texting.choicesdict.ContainsKey("ONgala"));
+                    if (texting.choicesdict.ContainsKey("Call2"))
+                    {
+                        Button5Text.text = textlines[6];
+                        Button5.interactable = true;
+                    }
+                    else
+                    {
+                        Button5Text.text = "";
+                        Button5.interactable = false;
+                    }
+                }
         }
         else
         {
@@ -395,6 +404,20 @@ public class ChoiceManager : MonoBehaviour
                 else
                 {
                    return;
+                }
+            }
+            else if (path == @"Dialogue\Dancer\DNOPTIONS3")
+            {
+                if (texting.choicesdict.ContainsKey("Call2"))
+                {
+                    texting.text = Resources.Load<TextAsset>(@"Dialogue\Dancer/DNboxer");
+                    DisableDialoguePanel();
+                    texting.EnableTextBox();
+                    choosing = false;
+                }
+                else
+                {
+                    return;
                 }
             }
         }

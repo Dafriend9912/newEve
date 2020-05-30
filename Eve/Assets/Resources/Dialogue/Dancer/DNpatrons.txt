@@ -1,16 +1,17 @@
 @You
 Can you tell me about any of the patrons here
-@Main Dancer
+@Dancer
 Sure, although there aren't too many.
 There's this one short man who comes in pretty frequently.
-He always asks for either me, or my backup dancer
-He pays really well, so I try to treat him nicely, but he's really not my type.
+<color=#FF0000>He always asks for either me, or my backup dancer<color=white>
+<color=#FF0000>He pays really well,<color=white> so I try to treat him nicely, but he's really not my type.
 He's got way too much confidence for a man of his stature.
 @You
-(Sounds like this dancer has some real disdain for some of these customers...)
+<color=#6EEFFF>(Sounds like this dancer has some real disdain for some of these customers...)<color=white>
+@Dancer
 There's also another man who comes in every now and then.
-I think he must be a gambler or something, because he always spends a decent amount of money, but manages to seem guarded and cunning with his money.
-We've talked once, but he doesn't spend much money on me. I wonder why.
+I think <color=#FF0000>he must be a gambler<color=white> or something, because he always spends a decent amount of money, but manages to seem guarded and cunning with his money.
+We've talked once, <color=#FF0000>but he doesn't spend much money on me.<color=white> I wonder why.
 @You
-(I wouldn't be spending money on you either once I heard you talk...)
-#Dialogue\Dancer\DNOPTIONS3
+<color=#6EEFFF>(I wouldn't be spending money on you either once I heard you talk...)<color=white>
+#Dialogue\Dancer\DNOPTIONS1

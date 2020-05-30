@@ -1,33 +1,33 @@
 %Call2
 @You
 You sounded pretty heated on the call, don't try to tell me you don't know them.
-@Main Dancer
+@Dancer
 I'm not lying!
-I really don't know who it was.
+<color=#FF0000>I really don't know who it was.<color=white>
 I'm practically famous. I get calls from men all day.
 Although some are more vulgar with the words they use, they all want the same thing.
 A chance to be with me, if just for a night.
 @You
 And do you ever accept their propositions?
-@Main Dancer
-Almost never.
-They're all losers, unfit to be with a woman like me.
-I know my worth, if you've got to resort to harassing me just for my attention, you clearly aren't worth my time.
-That's why I snapped at you at first. I thought you were another pervert who snuck back her just to swipe my underwear again.
+@Dancer
+<color=#FF0000>Almost never.<color=white>
+<color=#FF0000>They're all losers,<color=white> unfit to be with a woman like me.
+I know my worth, if you've got to resort to harassing me just for my attention, <color=#FF0000>you clearly aren't worth my time.<color=white>
+That's why I snapped at you at first. <color=#FF0000>I thought you were another pervert who snuck back her just to swipe my underwear again.<color=white>
 @You
-(Sounds like a bunch of creeps...)
+<color=#6EEFFF>(Sounds like a bunch of creeps...)<color=white>
 That's happened before?
-@Main Dancer
-Yeah, it's happened to most of us here, but happens to me the most.
+@Dancer
+Yeah, it's happened to most of us here, but <color=#FF0000>happens to me the most.<color=white>
 There's this one guy who comes here all the time and always asks for me and another one of the dancers here.
 I'm pretty sure it's him, but I've never caught him in the act.
 @You
-(As much as I'd love to solve that case, I should get back to the phone call...)
+<color=#6EEFFF>(As much as I'd love to solve that case, I should get back to the phone call...)<color=white>
 So that guy on the phone call could have been anyone?
-@Main Dancer
-Pretty much, I didn't even recognize his voice.
+@Dancer
+Pretty much, <color=#FF0000>I didn't even recognize his voice.<color=white>
 @You
-(Hmm... Not much to go off of there...)
-@Main Dancer
+<color=#6EEFFF>(Hmm... Not much to go off of there...)<color=white>
+@Dancer
 Anything else you need from me?
 $Dialogue\Dancer\DNOPTIONS1

@@ -1,5 +1,5 @@
 @You
-(Hmm... She's keeping something from me...)
-(Maybe it doesn't really matter...)
+<color=#6EEFFF>(Hmm... She's keeping something from me...)<color=white>
+<color=#6EEFFF>(Maybe it doesn't really matter...)<color=white>
 Ok fine, let's talk about something else
 #Dialogue\Dancer\DNOPTIONS3

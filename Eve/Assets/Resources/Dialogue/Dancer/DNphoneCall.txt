@@ -1,14 +1,14 @@
 @You
 Who was that you were just on the phone with?
-@Main Dancer
-Oh, it was nobody.
+@Dancer
+Oh, it was <color=#FF0000>nobody.<color=white>
 @You
 I'm a detective, there's no such thing as a nobody to me
-@Main Dancer
-Ok, well I'm the clubs most popular dancer, everyone is a nobody to me.
+@Dancer
+Ok, well <color=#FF0000>I'm the club's most popular dancer,<color=white> everyone is a nobody to me.
 @You
-That's not a good enough answer for me
-@Main Dancer
+That's not a good enough answer.
+@Dancer
 Hmph.
 I don't know who it was.
 #Dialogue\Dancer\DNOPTIONS4
